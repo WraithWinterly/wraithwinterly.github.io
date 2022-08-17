@@ -1,5 +1,6 @@
 .button {
   padding: 10px 22px;
+  padding-bottom: 12px;
   margin: 8px 10px;
   background-color: white;
   color: black;
@@ -9,17 +10,16 @@
   font-weight: 525;
   background-color: rgb(0, 123, 255);
   color: white;
-}
-.button a {
   text-align: center;
-  align-self: center;
 }
 .button:hover {
   color: rgb(0, 123, 255);
   background-color: white;
 }
 .button.button.lg {
-  padding: 16px 36px;
+  padding: 14px 36px;
+  padding-bottom: 18px;
+  font-size: 1.2rem;
 }
 .button.button.github {
   background-color: #6e5494;
@@ -220,10 +220,6 @@
   justify-content: center;
   align-items: center;
 }
-.showcase .showcase-text {
-  padding: 36px 0px;
-  font-size: 2.5rem;
-}
 .showcase .card-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -243,6 +239,11 @@
 }
 .showcase h1 {
   margin: 0;
+}
+
+.showcase-text {
+  padding: 36px 0px;
+  font-size: 2.5rem;
 }
 
 .showcase-card {
@@ -278,6 +279,18 @@
   border-radius: 15px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.all-projects {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #20232a;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 40px;
 }
 
 body {

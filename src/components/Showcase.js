@@ -20,20 +20,6 @@ function Showcase() {
       link: 'https://tasksultra.netlify.app/',
       img: TasksUltra,
     },
-    {
-      name: 'Tasks Ultra',
-      desc: 'Task Management app with Javascript',
-      stack: ['html', 'css', 'js'],
-      link: 'https://tasksultra.netlify.app/',
-      img: TasksUltra,
-    },
-    {
-      name: 'Tasks Ultra',
-      desc: 'Task Management app with Javascript',
-      stack: ['html', 'css', 'js'],
-      link: 'https://tasksultra.netlify.app/',
-      img: TasksUltra,
-    },
   ];
   return (
     <div className='showcase'>

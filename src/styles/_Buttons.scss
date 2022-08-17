@@ -3,8 +3,11 @@ $twitter-color: rgb(29, 155, 240);
 $linkedin-color: rgb(10, 102, 194);
 $steam-color: #1b2838;
 
+
+
 .button {
   padding: 10px 22px;
+  padding-bottom: 12px;
   margin: 8px 10px;
   background-color: white;
   color: black;
@@ -16,10 +19,9 @@ $steam-color: #1b2838;
   background-color: $accent-color-dark;
   color: white;
 
-  a {
-    text-align: center;
-    align-self: center;
-  }
+  text-align: center;
+
+
 
   &:hover {
     color: $accent-color-dark;
@@ -27,7 +29,9 @@ $steam-color: #1b2838;
   }
 
   &#{&}.lg {
-    padding: 16px 36px;
+    padding: 14px 36px;
+    padding-bottom: 18px;
+    font-size: 1.2rem;
   }
 
   &#{&}.github {
