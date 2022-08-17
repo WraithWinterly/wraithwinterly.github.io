@@ -1,0 +1,29 @@
+.App-content {
+  &::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accent-color {
+  color: $accent-color;
+}
+
+.accent-bg-color {
+  background-color: $accent-color;
+}
+
+.secondary-color {
+  color: $text-secondary-color;
+}
+
+.secondary-bg-color {
+  background-color: $text-secondary-color;
+}

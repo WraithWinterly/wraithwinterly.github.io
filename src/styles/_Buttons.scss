@@ -1,0 +1,72 @@
+$github-color: #6e5494;
+$twitter-color: rgb(29, 155, 240);
+$linkedin-color: rgb(10, 102, 194);
+$steam-color: #1b2838;
+
+.button {
+  padding: 10px 22px;
+  margin: 8px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+  font-weight: 525;
+
+  background-color: $accent-color-dark;
+  color: white;
+
+  a {
+    text-align: center;
+    align-self: center;
+  }
+
+  &:hover {
+    color: $accent-color-dark;
+    background-color: white;
+  }
+
+  &#{&}.lg {
+    padding: 16px 36px;
+  }
+
+  &#{&}.github {
+    background-color: $github-color;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $github-color;
+    }
+  }
+
+  &#{&}.twitter {
+    background-color: $twitter-color;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $twitter-color;
+    }
+  }
+
+  &#{&}.linkedin {
+    background-color: $linkedin-color;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $linkedin-color;
+    }
+  }
+
+  &#{&}.steam {
+    background-color: $steam-color;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: $steam-color;
+    }
+  }
+}

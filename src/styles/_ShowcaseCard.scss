@@ -1,0 +1,31 @@
+.showcase-card {
+  background-color: $header-color;
+  width: 500px;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 14px 24px;
+
+  @media(max-width: $phone-width) {
+    width: 320px;
+  }
+
+  .showcase-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media(max-width: $phone-width) {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+
+
+  img {
+    object-position: center;
+    height: 274px;
+    width: 274px;
+    border-radius: 15px;
+    object-fit: cover;
+  }
+}

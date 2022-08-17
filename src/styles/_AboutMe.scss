@@ -1,0 +1,51 @@
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 150px;
+}
+
+.content {
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: clamp(15%, 800px, 95%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  a {
+    pointer-events: all;
+  }
+
+  p {
+    // background-color: rgba($color: #000000, $alpha: 0.5);
+    border-radius: 25px;
+    padding: 10px 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 95%;
+    font-weight: bold;
+
+    @media(max-width: $phone-width) {
+      font-size: 1rem;
+    }
+  }
+
+  .button-container {
+    margin: 12px 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    @media(max-width: $phone-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

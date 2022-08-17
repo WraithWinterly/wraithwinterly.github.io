@@ -1,0 +1,26 @@
+@import './styles/_vars';
+@import './styles/_Buttons';
+@import './styles/_App';
+@import './styles/_Header';
+@import './styles/_AboutMe';
+@import './styles/_Everplast';
+@import './styles/_Showcase';
+@import './styles/_ShowcaseCard';
+@import './styles/_AllProjects';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $bg-color;
+  color: $text-primary-color;
+  //padding-bottom: 2000px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

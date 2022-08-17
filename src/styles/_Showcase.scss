@@ -1,0 +1,34 @@
+.showcase {
+  width: 100%;
+  height: fit-content;
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .showcase-text {
+    padding: 36px 0px;
+    font-size: 2.5rem;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+
+    @media (max-width: 1800px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (max-width: 1170px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}

@@ -1,0 +1,56 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $header-color;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+
+
+  .wraith-button {
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    border-radius: 15px;
+    transition: background-color 0.2s;
+    text-decoration: none;
+
+    color: $accent-color;
+
+    h2 {
+      padding-left: 16px;
+    }
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
+
+  img {
+    height: 60px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0px 40px;
+  }
+
+  li a {
+    margin: 0px 10px;
+    cursor: pointer;
+    color: $text-secondary-color;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-size: 1.25rem;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+}

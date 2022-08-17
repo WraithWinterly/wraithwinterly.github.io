@@ -1,0 +1,294 @@
+.button {
+  padding: 10px 22px;
+  margin: 8px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s;
+  font-weight: 525;
+  background-color: rgb(0, 123, 255);
+  color: white;
+}
+.button a {
+  text-align: center;
+  align-self: center;
+}
+.button:hover {
+  color: rgb(0, 123, 255);
+  background-color: white;
+}
+.button.button.lg {
+  padding: 16px 36px;
+}
+.button.button.github {
+  background-color: #6e5494;
+  color: white;
+}
+.button.button.github:hover {
+  background-color: white;
+  color: #6e5494;
+}
+.button.button.twitter {
+  background-color: rgb(29, 155, 240);
+  color: white;
+}
+.button.button.twitter:hover {
+  background-color: white;
+  color: rgb(29, 155, 240);
+}
+.button.button.linkedin {
+  background-color: rgb(10, 102, 194);
+  color: white;
+}
+.button.button.linkedin:hover {
+  background-color: white;
+  color: rgb(10, 102, 194);
+}
+.button.button.steam {
+  background-color: #1b2838;
+  color: white;
+}
+.button.button.steam:hover {
+  background-color: white;
+  color: #1b2838;
+}
+
+.App-content::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accent-color {
+  color: #61dafb;
+}
+
+.accent-bg-color {
+  background-color: #61dafb;
+}
+
+.secondary-color {
+  color: lightgray;
+}
+
+.secondary-bg-color {
+  background-color: lightgray;
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #20232a;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.Header .wraith-button {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 15px;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  color: #61dafb;
+}
+.Header .wraith-button h2 {
+  padding-left: 16px;
+}
+.Header .wraith-button:hover {
+  background-color: rgba(1, 1, 1, 0.2);
+}
+.Header img {
+  height: 60px;
+}
+.Header ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0px 40px;
+}
+.Header li a {
+  margin: 0px 10px;
+  cursor: pointer;
+  color: lightgray;
+  transition: color 0.2s;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.Header li a:hover {
+  color: #61dafb;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 150px;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: clamp(15%, 800px, 95%);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.content a {
+  pointer-events: all;
+}
+.content p {
+  border-radius: 25px;
+  padding: 10px 10px;
+  font-size: 1.3rem;
+  text-align: center;
+  width: 95%;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .content p {
+    font-size: 1rem;
+  }
+}
+.content .button-container {
+  margin: 12px 10px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .content .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.everplast {
+  background-color: #282c34;
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  width: 100%;
+  height: 640px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  border: 4px solid #282c34;
+  margin: 0px;
+}
+.everplast .buttons {
+  display: flex;
+  z-index: 2;
+}
+@media (max-width: 768px) {
+  .everplast .buttons {
+    padding: 0px 0px;
+    flex-direction: column;
+  }
+}
+.everplast h1 {
+  font-size: 3rem;
+}
+
+.showcase {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.showcase .showcase-text {
+  padding: 36px 0px;
+  font-size: 2.5rem;
+}
+.showcase .card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: end;
+  gap: 30px;
+}
+@media (max-width: 1800px) {
+  .showcase .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 1170px) {
+  .showcase .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.showcase h1 {
+  margin: 0;
+}
+
+.showcase-card {
+  background-color: #20232a;
+  width: 500px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 14px 24px;
+}
+@media (max-width: 768px) {
+  .showcase-card {
+    width: 320px;
+  }
+}
+.showcase-card .showcase-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .showcase-card .showcase-content {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.showcase-card img {
+  -o-object-position: center;
+     object-position: center;
+  height: 274px;
+  width: 274px;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #282c34;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}/*# sourceMappingURL=index.css.map */
