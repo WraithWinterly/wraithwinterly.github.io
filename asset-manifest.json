@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3f5ff31a.css",
+    "main.js": "/static/js/main.057b36de.js",
+    "static/js/787.25d4e5da.chunk.js": "/static/js/787.25d4e5da.chunk.js",
+    "static/media/pfp256.png": "/static/media/pfp256.ad061f881bf8974efbf2.png",
+    "static/media/EverplastBG.png": "/static/media/EverplastBG.3e6ab2b9320cc7459114.png",
+    "static/media/TasksUltra.png": "/static/media/TasksUltra.9bd1cc29a1eb657fd7f0.png",
+    "static/media/SpaceBackgroundDust.png": "/static/media/SpaceBackgroundDust.c5480a556af637533bb7.png",
+    "static/media/SpaceBackgroundPlanets.png": "/static/media/SpaceBackgroundPlanets.d86790fe445e1248ed4b.png",
+    "index.html": "/index.html",
+    "main.3f5ff31a.css.map": "/static/css/main.3f5ff31a.css.map",
+    "main.057b36de.js.map": "/static/js/main.057b36de.js.map",
+    "787.25d4e5da.chunk.js.map": "/static/js/787.25d4e5da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f5ff31a.css",
+    "static/js/main.057b36de.js"
+  ]
+}
