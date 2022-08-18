@@ -1,0 +1,20 @@
+.parallax-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  background-position: center;
+  background-size: calc(100vh + 300px);
+  image-rendering: auto;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -o-crisp-edges;
+  //opera
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: pixelated;
+  height: 2000px;
+  background-repeat: repeat;
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
+}

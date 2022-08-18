@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useId } from 'react';
 import ShowcaseCard from './ShowcaseCard';
 
 import PFP256 from '../assets/pfp256.png';
@@ -21,13 +21,19 @@ function Showcase() {
       img: TasksUltra,
     },
   ];
+
+
+  const id = useId();
+
   return (
     <div className='showcase'>
       <h1 className='accent-color showcase-text'>Showcase</h1>
-      <div className='card-grid'>
-        {showcase.map(card => {
-          return <ShowcaseCard name={card.name} desc={card.desc} stack={card.stack} link={card.link} img={card.img} />;
-        })}
+      <div className='card-container'>
+        <div className='card-flexbox'>
+          {showcase.map((card, index) => {
+            return <ShowcaseCard key={`{${id}-${index}}`} name={card.name} desc={card.desc} stack={card.stack} link={card.link} img={card.img} />;
+          })}
+        </div>
       </div>
     </div>
   );

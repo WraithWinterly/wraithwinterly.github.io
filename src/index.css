@@ -1,16 +1,15 @@
 .button {
-  padding: 10px 22px;
-  padding-bottom: 12px;
-  margin: 8px 10px;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  text-decoration: none;
-  transition: color 0.2s, background-color 0.2s;
-  font-weight: 525;
   background-color: rgb(0, 123, 255);
   color: white;
+  border-radius: 15px;
+  padding: 10px 18px;
+  padding-bottom: 14px;
+  margin: 8px 10px;
+  text-decoration: none;
   text-align: center;
+  font-weight: 525;
+  white-space: nowrap;
+  transition: color 0.2s, background-color 0.2s;
 }
 .button:hover {
   color: rgb(0, 123, 255);
@@ -54,6 +53,9 @@
   color: #1b2838;
 }
 
+.App-content {
+  overflow-y: hidden;
+}
 .App-content::-webkit-scrollbar {
   display: none;
   -ms-overflow-style: none;
@@ -83,50 +85,77 @@
 }
 
 .Header {
+  background-color: #20232a;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #20232a;
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
+  padding: 10px 20px;
   z-index: 10;
+}
+@media (max-width: 768px) {
+  .Header {
+    padding: 4px 6px;
+  }
 }
 .Header .wraith-button {
   display: flex;
   align-items: center;
-  padding: 0px 10px;
   border-radius: 15px;
-  transition: background-color 0.2s;
+  padding: 0px 8px;
   text-decoration: none;
+  transition: background-color 0.2s;
   color: #61dafb;
 }
-.Header .wraith-button h2 {
+.Header .wraith-button .wraith-text {
   padding-left: 16px;
+  font-size: 1.2rem;
+}
+.Header .wraith-button .pfp {
+  height: 50px;
+  border-radius: 50%;
 }
 .Header .wraith-button:hover {
   background-color: rgba(1, 1, 1, 0.2);
 }
-.Header img {
-  height: 60px;
-}
 .Header ul {
-  list-style-type: none;
   display: flex;
   padding: 0px 40px;
+  list-style-type: none;
 }
 .Header li a {
-  margin: 0px 10px;
-  cursor: pointer;
   color: lightgray;
-  transition: color 0.2s;
+  margin: 0px 10px;
   text-decoration: none;
   font-size: 1.25rem;
+  white-space: nowrap;
+  transition: color 0.2s;
 }
 .Header li a:hover {
   color: #61dafb;
+}
+
+.parallax-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  top: 0;
+  background-position: center;
+  background-size: calc(100vh + 300px);
+  image-rendering: auto;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -o-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: pixelated;
+  height: 2000px;
+  background-repeat: repeat;
+  transition: transform 0.5s;
+  transition-timing-function: ease-out;
 }
 
 .about-me {
@@ -134,24 +163,25 @@
   justify-content: center;
   align-items: flex-start;
   margin-top: 150px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+@media (max-width: 768px) {
+  .about-me {
+    margin-top: 75px;
+  }
 }
 
 .content {
   background-color: rgba(0, 0, 0, 0.5);
+  width: clamp(15%, 800px, 95%);
   border-radius: 25px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  justify-content: flex-start;
-  width: clamp(15%, 800px, 95%);
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-}
-.content a {
-  pointer-events: all;
+  justify-content: flex-start;
 }
 .content p {
   border-radius: 25px;
@@ -164,6 +194,18 @@
 @media (max-width: 768px) {
   .content p {
     font-size: 1rem;
+    padding: 2px 10px;
+  }
+}
+.content h2,
+.content h1 {
+  margin: 0px 0px;
+  padding: 12px 0px;
+}
+@media (max-width: 768px) {
+  .content h2,
+.content h1 {
+    padding: 4px 10px;
   }
 }
 .content .button-container {
@@ -174,8 +216,12 @@
 }
 @media (max-width: 768px) {
   .content .button-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    max-width: 350px;
+    justify-content: center;
+  }
+  .content .button-container a {
+    width: 30%;
   }
 }
 
@@ -185,19 +231,17 @@
   background-repeat: repeat-x;
   background-size: cover;
   width: 100%;
-  height: 640px;
+  height: 440px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 2;
   border: 4px solid #282c34;
   margin: 0px;
 }
 .everplast .buttons {
   display: flex;
-  z-index: 2;
 }
 @media (max-width: 768px) {
   .everplast .buttons {
@@ -210,6 +254,7 @@
 }
 
 .showcase {
+  margin: 0;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -217,25 +262,25 @@
   background-color: #282c34;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 38px;
+}
+.showcase .card-container {
+  display: flex;
+  width: 100%;
   justify-content: center;
   align-items: center;
 }
-.showcase .card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: end;
+.showcase .card-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1800px;
+  justify-items: flex-end;
   gap: 30px;
-}
-@media (max-width: 1800px) {
-  .showcase .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 1170px) {
-  .showcase .card-grid {
-    grid-template-columns: 1fr;
-  }
 }
 .showcase h1 {
   margin: 0;
@@ -254,6 +299,8 @@
   height: fit-content;
   border-radius: 15px;
   padding: 14px 24px;
+  justify-self: end;
+  align-self: flex-end;
 }
 @media (max-width: 768px) {
   .showcase-card {
@@ -282,6 +329,7 @@
 }
 
 .all-projects {
+  margin: 0;
   width: 100%;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -290,7 +338,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 40px;
+  position: relative;
 }
 
 body {

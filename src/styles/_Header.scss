@@ -1,28 +1,39 @@
 .Header {
+  background-color: $header-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: $header-color;
-  position: absolute;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  top: 0;
+  padding: 10px 20px;
   z-index: 10;
 
+  @media (max-width: $phone-width) {
+    padding: 4px 6px;
+  }
 
   .wraith-button {
     display: flex;
     align-items: center;
-    padding: 0px 10px;
     border-radius: 15px;
-    transition: background-color 0.2s;
+    padding: 0px 8px;
     text-decoration: none;
+    transition: background-color 0.2s;
 
     color: $accent-color;
 
-    h2 {
+
+
+    .wraith-text {
       padding-left: 16px;
+      font-size: 1.2rem;
+    }
+
+    .pfp {
+      height: 50px;
+      border-radius: 50%;
     }
 
     &:hover {
@@ -30,23 +41,22 @@
     }
   }
 
-  img {
-    height: 60px;
-  }
+
 
   ul {
-    list-style-type: none;
     display: flex;
     padding: 0px 40px;
+    list-style-type: none;
   }
 
   li a {
-    margin: 0px 10px;
-    cursor: pointer;
     color: $text-secondary-color;
-    transition: color 0.2s;
+    margin: 0px 10px;
     text-decoration: none;
     font-size: 1.25rem;
+    white-space: nowrap;
+    transition: color 0.2s;
+
 
     &:hover {
       color: $accent-color;

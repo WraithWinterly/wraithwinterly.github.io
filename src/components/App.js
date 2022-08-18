@@ -5,21 +5,29 @@ import SpaceParallax from './SpaceParallax';
 import Showcase from './Showcase';
 import AllProjects from './AllProjects';
 
-import { Parallax } from '@react-spring/parallax';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [offsetY, setOffsetY] = useState(0);
+
+  const handleScroll = () => setOffsetY(window.scrollY);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => (window.removeEventListener('scroll', handleScroll));
+  }, []);
+
   return (
     <div className='App'>
       <Header />
       <div className='App-content'>
-        <Parallax pages={4} style={{ height: '100vh' }}>
-          <div style={{ height: 'max(100vh, 600px)' }}></div>
-          <SpaceParallax />
-          <AboutMe />
-          <Everplast />
-          <Showcase />
-          <AllProjects />
-        </Parallax>
+        <SpaceParallax offsetY={offsetY} />
+        <AboutMe />
+        <div style={{ height: 'max(150vh, 1000px)' }}></div>
+        <Everplast />
+        <Showcase />
+        <AllProjects />
       </div>
     </div>
   );

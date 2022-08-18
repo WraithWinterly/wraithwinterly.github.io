@@ -1,38 +1,24 @@
 import React from 'react';
-import { ParallaxLayer } from '@react-spring/parallax';
+import ParallaxLayer from './ParallaxLayer';
 
 import SpaceBackgroundStars from '../assets/SpaceBackgroundStars.png';
 import SpaceBackgroundNebulae from '../assets/SpaceBackgroundNebulae.png';
 import SpaceBackgroundDust from '../assets/SpaceBackgroundDust.png';
 import SpaceBackgroundPlanets from '../assets/SpaceBackgroundPlanets.png';
 
-function SpaceParallax() {
-  const applyStyle = (bg, zidx) => {
-    return {
-      backgroundImage: `url(${bg})`,
-      backgroundSize: '110%',
-      backgroundPosition: 'center',
-      imageRendering: 'auto',
-      imageRendering: '-moz-crisp-edges',
-      imageRendering: '-webkit-crisp-edges',
-      imageRendering: 'crisp-edges',
-      imageRendering: '-o-crisp-edges', //opera
-      imageRendering: '-webkit-optimize-contrast',
-      imageRendering: 'pixelated',
-      zIndex: `${zidx}`,
-      height: '1900px',
-      backgroundRepeat: 'repeat',
-    };
-  };
+function SpaceParallax({ offsetY }) {
+  const offset = 0;
+
   return (
     <>
-      <ParallaxLayer style={{ backgroundColor: 'black', width: '100%', height: '120vh', zIndex: -1 }} />
-      <ParallaxLayer speed={0.01} style={applyStyle(SpaceBackgroundStars, -1)} />
-      <ParallaxLayer speed={0.05} style={applyStyle(SpaceBackgroundNebulae, -1)} />
-      <ParallaxLayer speed={0.2} style={applyStyle(SpaceBackgroundDust, -1)} />
-      <ParallaxLayer speed={0.5} style={applyStyle(SpaceBackgroundPlanets, -1)} />
+      <ParallaxLayer bgOnly={true} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.1} img={SpaceBackgroundStars} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.2} img={SpaceBackgroundNebulae} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.4} img={SpaceBackgroundDust} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.8} img={SpaceBackgroundPlanets} addOffset={offset} />
     </>
   );
-}
+};
+
 
 export default SpaceParallax;

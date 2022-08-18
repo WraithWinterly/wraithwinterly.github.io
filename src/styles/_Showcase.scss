@@ -1,26 +1,30 @@
 .showcase {
+  margin: 0;
   width: 100%;
   height: fit-content;
   background-color: $bg-color;
   display: flex;
   flex-direction: column;
+  z-index: 2;
+  position: relative;
   justify-content: center;
   align-items: center;
+  padding-bottom: 38px;
 
-  .card-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+  .card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    justify-content: end;
+  }
+
+  .card-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1800px;
+    justify-items: flex-end;
     gap: 30px;
-
-    @media (max-width: 1800px) {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    @media (max-width: 1170px) {
-      grid-template-columns: 1fr;
-    }
   }
 
   h1 {
