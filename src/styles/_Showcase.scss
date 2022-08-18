@@ -1,15 +1,5 @@
 .showcase {
-  margin: 0;
-  width: 100%;
-  height: fit-content;
-  background-color: $bg-color;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 38px;
+  scroll-margin-top: 50px;
 
   .card-container {
     display: flex;

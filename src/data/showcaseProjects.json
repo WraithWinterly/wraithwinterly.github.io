@@ -1,0 +1,25 @@
+[
+  {
+    "name": "This site",
+    "desc": "WraithWinterly\"s Portfolio",
+    "stack": [
+      "html",
+      "css",
+      "js",
+      "react"
+    ],
+    "link": "",
+    "img": "imgs/pfp256.png"
+  },
+  {
+    "name": "Tasks Ultra",
+    "desc": "Task Management app with Javascript",
+    "stack": [
+      "html",
+      "css",
+      "js"
+    ],
+    "link": "https: //tasksultra.netlify.app/",
+    "img": "/imgs/tasksultra.png"
+  }
+]

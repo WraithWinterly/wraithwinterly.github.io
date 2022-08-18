@@ -7,7 +7,7 @@
   justify-self: end;
   align-self: flex-end;
 
-  @media(max-width: $phone-width) {
+  @media(max-width: $low-width) {
     width: 320px;
   }
 
@@ -16,7 +16,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media(max-width: $phone-width) {
+    @media(max-width: $low-width) {
       flex-direction: column;
       gap: 5px;
     }

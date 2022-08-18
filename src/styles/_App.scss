@@ -1,11 +1,21 @@
-.App-content {
-  &::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
+html {
+  scroll-behavior: smooth;
 
-  overflow-y:hidden;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App-content {
+  background-color: $bg-color;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  z-index: 1;
+  position: relative;
 }
 
 .center {

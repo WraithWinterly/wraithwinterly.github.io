@@ -1,17 +1,55 @@
 .Header {
-  background-color: $header-color;
+  background-color: transparent;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  top: 0;
+  top: -4px;
   left: 0;
   right: 0;
-  padding: 10px 20px;
+  margin: 0;
+  padding: 0;
   z-index: 10;
 
-  @media (max-width: $phone-width) {
+  .Header--top {
+    background-color: $header-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .subheader {
+    left: 0;
+    right: 0;
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    background-color: red;
+
+  }
+
+  .subheader-button {
+
+    &:focus-within,
+    &:hover {
+      border: 1px solid red;
+    }
+  }
+
+
+
+  @media (max-width: $low-width) {
     padding: 4px 6px;
+  }
+
+  @media (max-height: $low-height) {
+    position: relative;
+    height: fit-content;
+    z-index: 2;
   }
 
   .wraith-button {
@@ -23,8 +61,6 @@
     transition: background-color 0.2s;
 
     color: $accent-color;
-
-
 
     .wraith-text {
       padding-left: 16px;
@@ -41,26 +77,22 @@
     }
   }
 
-
-
-  ul {
+  .header-buttons {
     display: flex;
     padding: 0px 40px;
-    list-style-type: none;
-  }
 
-  li a {
-    color: $text-secondary-color;
-    margin: 0px 10px;
-    text-decoration: none;
-    font-size: 1.25rem;
-    white-space: nowrap;
-    transition: color 0.2s;
+    a {
+      color: $text-secondary-color;
+      margin: 0px 10px;
+      text-decoration: none;
+      font-size: 1.25rem;
+      white-space: nowrap;
+      transition: color 0.2s;
 
-
-    &:hover {
-      color: $accent-color;
+      &:hover {
+        color: $accent-color;
+      }
     }
-  }
 
+  }
 }

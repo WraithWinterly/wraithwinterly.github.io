@@ -1,13 +1,15 @@
 import React from 'react';
 
-function AboutMe() {
+function Home() {
   return (
-    <div className='about-me'>
+    <div className='about-me' id='about-me'>
       <div className='content'>
-        <em style={{ color: 'pink' }}>Warning: This site is not yet ready nor complete.</em>
-        <h1>I am <span className='accent-color'>Ayden Springer</span>.</h1>
-        <h2>I build <span className='accent-color'>digital experiences</span>.</h2>
-        <p className='secondary-color'>Web developer previously in game development. A passionate, motivated programmer. Building accessible, stunning, and high quality products.</p>
+        <div className='text-area'>
+          <em style={{ color: 'pink' }}>Warning: This site is not yet ready nor complete.</em>
+          <h1>I am <span className='accent-color'>Ayden Springer</span>.</h1>
+          <h2>I build <span className='accent-color'>digital experiences</span>.</h2>
+          <p className='secondary-color'>Web developer previously in game development. A passionate, motivated programmer. Building accessible, stunning, and high quality products.</p>
+        </div>
         <div className='button-container'>
           <a href='https://github.com/WraithWinterly/wraithwinterly.github.io' target='_blank' className='button github'>View Source</a>
           <a href='https://github.com/WraithWinterly' target='_blank' className='button github'>View Github</a>
@@ -20,4 +22,4 @@ function AboutMe() {
   );
 }
 
-export default AboutMe;
+export default Home;

@@ -3,7 +3,7 @@
   color: white;
   border-radius: 15px;
   padding: 10px 18px;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
   margin: 8px 10px;
   text-decoration: none;
   text-align: center;
@@ -16,7 +16,7 @@
   background-color: white;
 }
 .button.button.lg {
-  padding: 14px 36px;
+  padding: 12px 36px;
   padding-bottom: 18px;
   font-size: 1.2rem;
 }
@@ -53,13 +53,23 @@
   color: #1b2838;
 }
 
-.App-content {
-  overflow-y: hidden;
+html {
+  scroll-behavior: smooth;
 }
-.App-content::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.App-content {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0px;
+  z-index: 1;
+  position: relative;
 }
 
 .center {
@@ -85,20 +95,51 @@
 }
 
 .Header {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: -4px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.Header .Header--top {
   background-color: #20232a;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px;
+}
+.Header .subheader {
   left: 0;
   right: 0;
-  padding: 10px 20px;
-  z-index: 10;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  background-color: red;
+}
+.Header .subheader-button:focus-within, .Header .subheader-button:hover {
+  border: 1px solid red;
 }
 @media (max-width: 768px) {
   .Header {
     padding: 4px 6px;
+  }
+}
+@media (max-height: 500px) {
+  .Header {
+    position: relative;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    z-index: 2;
   }
 }
 .Header .wraith-button {
@@ -121,12 +162,11 @@
 .Header .wraith-button:hover {
   background-color: rgba(1, 1, 1, 0.2);
 }
-.Header ul {
+.Header .header-buttons {
   display: flex;
   padding: 0px 40px;
-  list-style-type: none;
 }
-.Header li a {
+.Header .header-buttons a {
   color: lightgray;
   margin: 0px 10px;
   text-decoration: none;
@@ -134,12 +174,12 @@
   white-space: nowrap;
   transition: color 0.2s;
 }
-.Header li a:hover {
+.Header .header-buttons a:hover {
   color: #61dafb;
 }
 
 .parallax-image {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: -1;
   top: 0;
@@ -152,7 +192,7 @@
   image-rendering: -o-crisp-edges;
   -ms-interpolation-mode: nearest-neighbor;
       image-rendering: pixelated;
-  height: 2000px;
+  height: max(120vh, 2500px);
   background-repeat: repeat;
   transition: transform 0.5s;
   transition-timing-function: ease-out;
@@ -162,26 +202,44 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 150px;
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 0;
+  transform: translate(0%, 18vh);
 }
-@media (max-width: 768px) {
+@media (max-height: 500px) {
   .about-me {
-    margin-top: 75px;
+    transform: translate(0%, 10vh);
+  }
+  .about-me a {
+    padding: 6px 10px;
+    padding-bottom: 10px;
+    margin: 4px;
   }
 }
 
 .content {
   background-color: rgba(0, 0, 0, 0.5);
-  width: clamp(15%, 800px, 95%);
+  width: clamp(15%, 800px, 90%);
   border-radius: 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+}
+@media (max-height: 500px) {
+  .content {
+    flex-direction: row;
+    width: clamp(15%, 800px, 80%);
+  }
+}
+.content .text-area {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .content p {
   border-radius: 25px;
@@ -224,6 +282,14 @@
     width: 30%;
   }
 }
+@media (max-height: 500px) {
+  .content .button-container {
+    flex-direction: column;
+  }
+  .content .button-container a {
+    width: 90%;
+  }
+}
 
 .everplast {
   background-color: #282c34;
@@ -231,13 +297,13 @@
   background-repeat: repeat-x;
   background-size: cover;
   width: 100%;
-  height: 440px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-color: 1px solid red;
   align-items: center;
   position: relative;
-  border: 4px solid #282c34;
   margin: 0px;
 }
 .everplast .buttons {
@@ -254,19 +320,7 @@
 }
 
 .showcase {
-  margin: 0;
-  width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  z-index: 2;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 38px;
+  scroll-margin-top: 50px;
 }
 .showcase .card-container {
   display: flex;
@@ -329,16 +383,11 @@
 }
 
 .all-projects {
-  margin: 0;
+  background-color: #282c34;
   width: 100%;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  background-color: #20232a;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  position: relative;
 }
 
 body {

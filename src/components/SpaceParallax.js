@@ -1,10 +1,10 @@
 import React from 'react';
 import ParallaxLayer from './ParallaxLayer';
 
-import SpaceBackgroundStars from '../assets/SpaceBackgroundStars.png';
-import SpaceBackgroundNebulae from '../assets/SpaceBackgroundNebulae.png';
-import SpaceBackgroundDust from '../assets/SpaceBackgroundDust.png';
-import SpaceBackgroundPlanets from '../assets/SpaceBackgroundPlanets.png';
+import stars from '../assets/parallax/stars.png';
+import nebulae from '../assets/parallax/nebulae.png';
+import dust from '../assets/parallax/dust.png';
+import planets from '../assets/parallax/planets.png';
 
 function SpaceParallax({ offsetY }) {
   const offset = 0;
@@ -12,10 +12,10 @@ function SpaceParallax({ offsetY }) {
   return (
     <>
       <ParallaxLayer bgOnly={true} />
-      <ParallaxLayer offsetY={offsetY} speed={-0.1} img={SpaceBackgroundStars} addOffset={offset} />
-      <ParallaxLayer offsetY={offsetY} speed={-0.2} img={SpaceBackgroundNebulae} addOffset={offset} />
-      <ParallaxLayer offsetY={offsetY} speed={-0.4} img={SpaceBackgroundDust} addOffset={offset} />
-      <ParallaxLayer offsetY={offsetY} speed={-0.8} img={SpaceBackgroundPlanets} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.1} img={stars} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.2} img={nebulae} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.4} img={dust} addOffset={offset} />
+      <ParallaxLayer offsetY={offsetY} speed={-0.8} img={planets} addOffset={offset} />
     </>
   );
 };

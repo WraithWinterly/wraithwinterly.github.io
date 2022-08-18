@@ -1,28 +1,42 @@
 import React from 'react';
-import PFP256 from '../assets/pfp256.png';
-import useWindowSize from './Hooks';
+
+import useWindowSize from '../hooks/useWindowSize';
 
 function Header() {
 
   const size = useWindowSize();
 
+  const headerButtons = (
+    <div className='header-buttons'>
+      <a href="#home">Home</a>
+      <a href="#skills">Skills</a>
+      <a href="#showcase">Showcase</a>
+      <a href="#all-projects">All Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  );
+
   return (
     <div className='Header'>
-      <a href="/" className='wraith-button'>
-        <img className='pfp' src={PFP256} alt='Profile Picture'></img>
-        <h2 className='wraith-text'>WraithWinterly</h2>
-      </a>
-      {size.width >= 768 && (
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li><a href="#projects">Skills</a></li>
-          <li><a href="#projects">Showcase</a></li>
-          <li><a href="#projects">All Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      )}
+      <div className='Header--top'>
+        <a href="/" className='wraith-button'>
+          <img className='pfp' src={`${process.env.PUBLIC_URL}/imgs/pfp256.png`} alt='Profile Picture'></img>
+          <h2 className='wraith-text'>WraithWinterly</h2>
+        </a>
+        {size.width > 768 && (
+          headerButtons
+        )}
+        {size.width <= 768 && (
+          <button className='subheader-button'>
+            <span className="material-symbols-outlined">
+              Menu
+            </span>
+          </button>
+        )}
+      </div>
+      <div className='subheader'>
+        {headerButtons}
+      </div>
     </div>
   );
 }

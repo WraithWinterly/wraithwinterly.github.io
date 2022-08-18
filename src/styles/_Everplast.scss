@@ -4,20 +4,21 @@
   background-repeat: repeat-x;
   background-size: cover;
   width: 100%;
-  height: 440px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-color: 1px solid red;
   align-items: center;
   position: relative;
-  border: 4px solid $bg-color;
+  //border: 4px solid $bg-color;
   margin: 0px;
 
   .buttons {
     display: flex;
 
 
-    @media(max-width: $phone-width) {
+    @media(max-width: $low-width) {
       padding: 0px 0px;
       flex-direction: column;
     }

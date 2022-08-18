@@ -1,10 +1,7 @@
 .all-projects {
-  margin: 0;
+  background-color: $bg-color;
   width: 100%;
-  height: fit-content;
-  background-color: $header-color;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  position: relative;
 }

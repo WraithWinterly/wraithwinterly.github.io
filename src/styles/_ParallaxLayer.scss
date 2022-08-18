@@ -1,5 +1,5 @@
 .parallax-image {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: -1;
   top: 0;
@@ -13,7 +13,7 @@
   //opera
   image-rendering: -webkit-optimize-contrast;
   image-rendering: pixelated;
-  height: 2000px;
+  height: max(120vh, 2500px);
   background-repeat: repeat;
   transition: transform 0.5s;
   transition-timing-function: ease-out;

@@ -1,9 +1,11 @@
-import Header from './Header';
-import AboutMe from './AboutMe';
-import Everplast from './Everplast';
-import SpaceParallax from './SpaceParallax';
-import Showcase from './Showcase';
-import AllProjects from './AllProjects';
+import Header from './components/Header';
+
+import Home from './components/Home';
+import SpaceParallax from './components/SpaceParallax';
+
+import Everplast from './components/content/Everplast';
+import Showcase from './components/content/Showcase';
+import AllProjects from './components/content/AllProjects';
 
 import { useEffect, useState } from 'react';
 
@@ -21,10 +23,10 @@ function App() {
   return (
     <div className='App'>
       <Header />
+      <SpaceParallax offsetY={offsetY} />
+      <Home />
+      <div id='home' style={{ height: 'max(120vh, 600px)' }}></div>
       <div className='App-content'>
-        <SpaceParallax offsetY={offsetY} />
-        <AboutMe />
-        <div style={{ height: 'max(150vh, 1000px)' }}></div>
         <Everplast />
         <Showcase />
         <AllProjects />
