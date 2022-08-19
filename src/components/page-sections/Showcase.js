@@ -7,9 +7,9 @@ import './Showcase.css';
 
 function Showcase() {
   const showcase = JSON.parse(JSON.stringify(ShowCaseJSON));
-  showcase.push(showcase[0]);
-  showcase.push(showcase[0]);
-  showcase.push(showcase[0]);
+  // showcase.push(showcase[0]);
+  // showcase.push(showcase[0]);
+  // showcase.push(showcase[0]);
 
   const id = useId();
 
