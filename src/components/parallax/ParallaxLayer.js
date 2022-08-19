@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ParallaxLayer.css';
+
 function ParallaxLayer({ bgOnly, offsetY, img, speed, addOffset }) {
 
   function addBg() {
@@ -17,7 +19,7 @@ function ParallaxLayer({ bgOnly, offsetY, img, speed, addOffset }) {
   }
 
   return (
-    <div className='parallax-image' style={addBg()}></div>
+    <div className='ParallaxLayer' style={addBg()}></div>
   );
 }
 

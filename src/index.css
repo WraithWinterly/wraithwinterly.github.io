@@ -1,56 +1,18 @@
-.button {
-  background-color: rgb(0, 123, 255);
-  color: white;
-  border-radius: 15px;
-  padding: 10px 18px;
-  padding-bottom: 12px;
-  margin: 8px 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 525;
-  white-space: nowrap;
-  transition: color 0.2s, background-color 0.2s;
-}
-.button:hover {
-  color: rgb(0, 123, 255);
-  background-color: white;
-}
-.button.button.lg {
-  padding: 12px 36px;
-  padding-bottom: 18px;
-  font-size: 1.2rem;
-}
-.button.button.github {
-  background-color: #6e5494;
-  color: white;
-}
-.button.button.github:hover {
-  background-color: white;
-  color: #6e5494;
-}
-.button.button.twitter {
-  background-color: rgb(29, 155, 240);
-  color: white;
-}
-.button.button.twitter:hover {
-  background-color: white;
-  color: rgb(29, 155, 240);
-}
-.button.button.linkedin {
-  background-color: rgb(10, 102, 194);
-  color: white;
-}
-.button.button.linkedin:hover {
-  background-color: white;
-  color: rgb(10, 102, 194);
-}
-.button.button.steam {
-  background-color: #1b2838;
-  color: white;
-}
-.button.button.steam:hover {
-  background-color: white;
-  color: #1b2838;
+:root {
+  --header-color: rgb(32, 35, 42);
+  --header-color-opacity: rgb(32, 35, 42, 0.8);
+  --bg-color: rgb(40, 44, 52);
+  --accent-color: rgb(97, 218, 251);
+  --accent-color2: rgb(0, 123, 255);
+  --hover-color: rgba(1, 1, 1, 0.2);
+
+  --text-color: white;
+  --text-color-light: lightgray;
+
+  --github-color: rgb(110, 84, 148);
+  --twitter-color: rgb(29, 155, 240);
+  --linkedin-color: rgb(10, 102, 194);
+  --steam-color: rgb(27, 40, 56);
 }
 
 html {
@@ -58,347 +20,27 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-.App-content {
-  background-color: #282c34;
-  display: flex;
-  flex-direction: column;
-  padding: 8px 0px;
-  z-index: 1;
-  position: relative;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.accent-color {
-  color: #61dafb;
-}
-
-.accent-bg-color {
-  background-color: #61dafb;
-}
-
-.secondary-color {
-  color: lightgray;
-}
-
-.secondary-bg-color {
-  background-color: lightgray;
-}
-
-.Header {
-  background-color: transparent;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: -4px;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 10;
-}
-.Header .Header--top {
-  background-color: #20232a;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-  padding: 10px 20px;
-}
-.Header .subheader {
-  left: 0;
-  right: 0;
-  height: 100%;
-  position: relative;
-  opacity: 0;
-  background-color: red;
-}
-.Header .subheader-button:focus-within, .Header .subheader-button:hover {
-  border: 1px solid red;
-}
-@media (max-width: 768px) {
-  .Header {
-    padding: 4px 6px;
-  }
-}
-@media (max-height: 500px) {
-  .Header {
-    position: relative;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    z-index: 2;
-  }
-}
-.Header .wraith-button {
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  padding: 0px 8px;
-  text-decoration: none;
-  transition: background-color 0.2s;
-  color: #61dafb;
-}
-.Header .wraith-button .wraith-text {
-  padding-left: 16px;
-  font-size: 1.2rem;
-}
-.Header .wraith-button .pfp {
-  height: 50px;
-  border-radius: 50%;
-}
-.Header .wraith-button:hover {
-  background-color: rgba(1, 1, 1, 0.2);
-}
-.Header .header-buttons {
-  display: flex;
-  padding: 0px 40px;
-}
-.Header .header-buttons a {
-  color: lightgray;
-  margin: 0px 10px;
-  text-decoration: none;
-  font-size: 1.25rem;
-  white-space: nowrap;
-  transition: color 0.2s;
-}
-.Header .header-buttons a:hover {
-  color: #61dafb;
-}
-
-.parallax-image {
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  top: 0;
-  background-position: center;
-  background-size: calc(100vh + 300px);
-  image-rendering: auto;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: -webkit-crisp-edges;
-  image-rendering: crisp-edges;
-  image-rendering: -o-crisp-edges;
-  -ms-interpolation-mode: nearest-neighbor;
-      image-rendering: pixelated;
-  height: max(120vh, 2500px);
-  background-repeat: repeat;
-  transition: transform 0.5s;
-  transition-timing-function: ease-out;
-}
-
-.about-me {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  transform: translate(0%, 18vh);
-}
-@media (max-height: 500px) {
-  .about-me {
-    transform: translate(0%, 10vh);
-  }
-  .about-me a {
-    padding: 6px 10px;
-    padding-bottom: 10px;
-    margin: 4px;
-  }
-}
-
-.content {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: clamp(15%, 800px, 90%);
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-@media (max-height: 500px) {
-  .content {
-    flex-direction: row;
-    width: clamp(15%, 800px, 80%);
-  }
-}
-.content .text-area {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.content p {
-  border-radius: 25px;
-  padding: 10px 10px;
-  font-size: 1.3rem;
-  text-align: center;
-  width: 95%;
-  font-weight: bold;
-}
-@media (max-width: 768px) {
-  .content p {
-    font-size: 1rem;
-    padding: 2px 10px;
-  }
-}
-.content h2,
-.content h1 {
-  margin: 0px 0px;
-  padding: 12px 0px;
-}
-@media (max-width: 768px) {
-  .content h2,
-.content h1 {
-    padding: 4px 10px;
-  }
-}
-.content .button-container {
-  margin: 12px 10px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .content .button-container {
-    flex-wrap: wrap;
-    max-width: 350px;
-    justify-content: center;
-  }
-  .content .button-container a {
-    width: 30%;
-  }
-}
-@media (max-height: 500px) {
-  .content .button-container {
-    flex-direction: column;
-  }
-  .content .button-container a {
-    width: 90%;
-  }
-}
-
-.everplast {
-  background-color: #282c34;
-  background-position: center;
-  background-repeat: repeat-x;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-color: 1px solid red;
-  align-items: center;
-  position: relative;
-  margin: 0px;
-}
-.everplast .buttons {
-  display: flex;
-}
-@media (max-width: 768px) {
-  .everplast .buttons {
-    padding: 0px 0px;
-    flex-direction: column;
-  }
-}
-.everplast h1 {
-  font-size: 3rem;
-}
-
-.showcase {
-  scroll-margin-top: 50px;
-}
-.showcase .card-container {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
-.showcase .card-flexbox {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1800px;
-  justify-items: flex-end;
-  gap: 30px;
-}
-.showcase h1 {
-  margin: 0;
-}
-
-.showcase-text {
-  padding: 36px 0px;
-  font-size: 2.5rem;
-}
-
-.showcase-card {
-  background-color: #20232a;
-  width: 500px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 15px;
-  padding: 14px 24px;
-  justify-self: end;
-  align-self: flex-end;
-}
-@media (max-width: 768px) {
-  .showcase-card {
-    width: 320px;
-  }
-}
-.showcase-card .showcase-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .showcase-card .showcase-content {
-    flex-direction: column;
-    gap: 5px;
-  }
-}
-.showcase-card img {
-  -o-object-position: center;
-     object-position: center;
-  height: 274px;
-  width: 274px;
-  border-radius: 15px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.all-projects {
-  background-color: #282c34;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
-  color: white;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}/*# sourceMappingURL=index.css.map */
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.accent-color {
+  color: var(--accent-color);
+}
+
+.accent-bg-color {
+  background-color: var(--accent-color);
+}
+
+.text-color-light {
+  color: var(--text-color-light);
+}

@@ -1,0 +1,93 @@
+.Header {
+  background-color: transparent;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.Header-top {
+  background-color: var(--header-color-opacity);
+  width: inherit;
+  position: relative;
+  backdrop-filter: blur(5px);
+}
+
+.Header-top-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 28px;
+}
+
+.Header-wraith-button {
+  color: var(--accent-color);
+  border-radius: 15px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+
+}
+
+.Header-wraith-button:hover {
+  background-color: var(--hover-color);
+}
+
+.Header-pfp {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.Header-wraith-text {
+  padding-left: 16px;
+  font-size: 1.2rem;
+}
+
+.Header-link-container {
+  display: flex;
+}
+
+.Header-link {
+  color: var(--text-color-light);
+  margin: 0px 10px;
+  font-size: 1.25rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+.Header-link:hover {
+  color: var(--accent-color);
+}
+
+.Header-menu-button:focus-within,
+.Header-menu-button:hover {
+  border: 1px solid red;
+}
+
+.Header-sub {
+  left: 0;
+  right: 0;
+  height: 100%;
+  position: relative;
+  opacity: 0;
+  background-color: red;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-height: 500px) {
+  .Header {
+    position: relative;
+    height: fit-content;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,64 @@
+.button {
+  background-color: var(--accent-color2);
+  color: white;
+  border-radius: 15px;
+  padding: 10px 18px;
+  padding-bottom: 12px;
+  margin: 8px 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 525;
+  white-space: nowrap;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.button:hover {
+  color: var(--accent-color2);
+  background-color: white;
+}
+
+.button-large {
+  padding: 12px 36px;
+  padding-bottom: 18px;
+  font-size: 1.2rem;
+}
+
+.button-github {
+  background-color: var(--github-color);
+  color: white;
+}
+
+.button-github:hover {
+  background-color: white;
+  color: var(--github-color);
+}
+
+.button-twitterr {
+  background-color: var(--twitter-color);
+  color: white;
+}
+
+.button-twitterr:hover {
+  background-color: white;
+  color: var(--twitter-color);
+}
+
+.button-linkedin {
+  background-color: var(--linkedin-color);
+  color: white;
+}
+
+.button-linkedin:hover {
+  background-color: white;
+  color: var(--linkedin-color);
+}
+
+.button-steam {
+  background-color: var(--steam-color);
+  color: white;
+}
+
+.button-steam:hover {
+  background-color: white;
+  color: var(--steam-color);
+}

@@ -1,0 +1,25 @@
+.Everplast {
+  background-color: var(--bg-color);
+  background-position: bottom;
+  background-size: cover;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Everplast-button-container {
+  display: flex;
+}
+
+.Everplast-text {
+  font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+  .Everplast-button-container {
+    padding: 0;
+    flex-direction: column;
+  }
+}

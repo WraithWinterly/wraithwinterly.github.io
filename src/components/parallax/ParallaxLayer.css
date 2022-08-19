@@ -1,20 +1,19 @@
-.parallax-image {
-  position: fixed;
-  width: 100%;
-  z-index: -1;
-  top: 0;
+.ParallaxLayer {
   background-position: center;
   background-size: calc(100vh + 300px);
+  background-repeat: repeat;
+  width: 100%;
+  height: max(120vh, 2500px);
   image-rendering: auto;
   image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-crisp-edges;
-  image-rendering: crisp-edges;
   image-rendering: -o-crisp-edges;
-  //opera
   image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   image-rendering: pixelated;
-  height: max(120vh, 2500px);
-  background-repeat: repeat;
+  position: fixed;
+  top: 0;
+  z-index: -1;
   transition: transform 0.5s;
   transition-timing-function: ease-out;
 }

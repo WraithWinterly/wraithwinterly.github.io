@@ -1,0 +1,23 @@
+.Showcase {
+  scroll-margin-top: 62px;
+}
+
+.Showcase-card-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Showcase-card-container {
+  max-width: 1800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+}
+
+.Showcase-text {
+  padding-bottom: 36px;
+  font-size: 2.5rem;
+  text-align: center;
+}

@@ -1,13 +1,15 @@
 import Header from './components/Header';
 
 import Home from './components/Home';
-import SpaceParallax from './components/SpaceParallax';
+import SpaceParallax from './components/parallax/SpaceParallax';
 
-import Everplast from './components/content/Everplast';
-import Showcase from './components/content/Showcase';
-import AllProjects from './components/content/AllProjects';
+import Everplast from './components/page-sections/Everplast';
+import Showcase from './components/page-sections/Showcase';
+import AllProjects from './components/page-sections/AllProjects';
 
 import { useEffect, useState } from 'react';
+
+import './App.css';
 
 function App() {
   const [offsetY, setOffsetY] = useState(0);
@@ -25,8 +27,7 @@ function App() {
       <Header />
       <SpaceParallax offsetY={offsetY} />
       <Home />
-      <div id='home' style={{ height: 'max(120vh, 600px)' }}></div>
-      <div className='App-content'>
+      <div className='App-page-sections'>
         <Everplast />
         <Showcase />
         <AllProjects />
