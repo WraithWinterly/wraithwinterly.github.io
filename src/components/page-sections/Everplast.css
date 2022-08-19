@@ -1,5 +1,6 @@
 .Everplast {
   background-color: var(--bg-color);
+  background-image: url('https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/everplast.png');
   background-position: bottom;
   background-size: cover;
   height: 480px;

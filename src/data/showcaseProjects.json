@@ -1,15 +1,10 @@
 [
   {
-    "name": "This site",
-    "desc": "WraithWinterly's Portfolio",
-    "stack": [
-      "html",
-      "css",
-      "js",
-      "react"
-    ],
+    "name": "USING TESTING DATA",
+    "desc": "USING TESTING DATA",
+    "stack": [],
     "link": "",
-    "img": "imgs/pfp256.png"
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/pfp256.png"
   },
   {
     "name": "Tasks Ultra",
@@ -20,6 +15,6 @@
       "js"
     ],
     "link": "https://tasksultra.netlify.app/",
-    "img": "/imgs/tasksultra.png"
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/showcase/tasksultra.png"
   }
 ]
