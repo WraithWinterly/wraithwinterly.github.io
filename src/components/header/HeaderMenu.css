@@ -1,0 +1,44 @@
+.HeaderMenu {
+  background-color: rgb(1, 1, 1, 0.5);
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  transition: opacity 0.2s;
+}
+
+.HeaderMenu-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.HeaderMenu-hidden .HeaderMenu-link-container {
+  transform: scale(80%);
+}
+
+.HeaderMenu-link-container {
+  background-color: rgb(1, 1, 1, 0.8);
+  border-radius: 25px;
+  padding: 24px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: centers;
+  text-align: center;
+  gap: 25px;
+  transform: scale(100%);
+  transition: transform 0.2s;
+}
+
+.HeaderMenu-link-container .Header-link {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.HeaderMenu-link-container .Header-link:hover {
+  color: var(--accent-color2);
+}

@@ -30,6 +30,7 @@
 .Header-wraith-button {
   color: var(--accent-color);
   border-radius: 15px;
+  padding: 0px 10px;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -51,8 +52,12 @@
   font-size: 1.2rem;
 }
 
-.Header-link-container {
+.Header-link-container-mobile {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  row-gap: 25px;
 }
 
 .Header-link {
@@ -68,21 +73,41 @@
   color: var(--accent-color);
 }
 
+.Header-menu-button {
+  background-color: transparent;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.Header-menu-button-hidden {
+  display: none;
+}
+
 .Header-menu-button:focus-within,
 .Header-menu-button:hover {
-  border: 1px solid red;
+  background-color: var(--hover-color);
+  color: var(--accent-color2);
 }
 
-.Header-sub {
-  left: 0;
-  right: 0;
-  height: 100%;
-  position: relative;
-  opacity: 0;
-  background-color: red;
+.Header-menu-button-open {
+  transform: rotate(90deg);
+  background-color: var(--hover-color);
+  color: var(--accent-color2);
 }
 
-@media (max-width: 768px) {}
+
+@media (max-width: 768px) {
+  .Header-link {
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-height: 500px) {
   .Header {
