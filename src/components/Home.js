@@ -19,7 +19,7 @@ function Home() {
           <div className='Home-content-text'>
             <em style={{ color: 'pink' }}>Warning: This site is not yet ready nor complete.</em>
             <h1>I am <span className='accent-color'>Ayden Springer</span>.</h1>
-            <h2>I build <span className='accent-color'>digital experiences</span>.</h2>
+            <h2>Building <span className='accent-color'>Front End </span>Applications.</h2>
             <p className='text-color-light'>Web developer previously in game development. A passionate, motivated programmer. Building accessible, stunning, and high quality products.</p>
           </div>
           <div className='Home-about-buttons-container'>
