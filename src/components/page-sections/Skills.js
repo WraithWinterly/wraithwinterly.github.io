@@ -1,26 +1,50 @@
-import React from 'react';
+import React, { useState, useEffect, useId } from 'react';
 
 import SkillsIcon from './SkillsIcon';
 
 import './Skills.css';
+import '../LoadingIcon';
+import LoadingIcon from '../LoadingIcon';
 
-function Everplast() {
-  const getIcon = icon => {
-    return `https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/${icon}-icon.png`;
-  };
+function Skills() {
+  const id = useId();
+
+  const [data, setData] = useState(null);
+  const [failed, setFailed] = useState(false);
+
+  async function getShowCaseItems() {
+    try {
+      const response = await fetch('https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/json/skills.json');
+      const data = await response.json();
+      setData(data);
+      setFailed(false);
+    }
+    catch {
+      console.error('Error fetching skills items');
+      setData(null);
+      setFailed(true);
+    }
+  }
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      getShowCaseItems();
+    }, 500);
+    return () => { clearTimeout(timeout); };
+  }, []);
+
   return (
     <div className='Skills-container'>
-      <div className='Skills-icons-container'>
-        <SkillsIcon name={'HTML5'} img={getIcon('html')} />
-        <SkillsIcon name={'CSS3'} img={getIcon('css')} />
-        <SkillsIcon name={'JavaScript'} img={getIcon('javascript')} />
-        <SkillsIcon name={'React'} img={getIcon('react')} />
-        <SkillsIcon name={'Godot'} img={getIcon('godot')} />
-        <SkillsIcon name={'Unity'} img={getIcon('unity')} />
-        <SkillsIcon name={'C#'} img={getIcon('csharp')} />
-      </div>
+      {data &&
+        <div className='Skills-icons-container'>
+          {data && data.map((skill, index) => {
+            return <SkillsIcon key={`${id}-${index}`} name={skill.name} img={skill.img} link={skill.link} />;
+          })}
+        </div>
+      }
+      {!data && <LoadingIcon text={'Fetching Skills'} handleRefresh={getShowCaseItems} failed={failed} />}
     </div>
   );
 }
 
-export default Everplast;
+export default Skills;

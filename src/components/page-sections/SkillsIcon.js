@@ -2,15 +2,12 @@ import React from 'react';
 
 import './SkillsIcon.css';
 
-function SkillsIcon({ name, img }) {
-
-  console.log(img);
-
+function SkillsIcon({ name, img, link }) {
   return (
-    <div className='SkillsIcon'>
+    <a className='SkillsIcon' href={link} target='_blank'>
       <div className='SkillsIcon-img' style={{ backgroundImage: `url(${img})` }}></div>
       <h3 className='SkillsIcon-name'>{name}</h3>
-    </div>
+    </a>
   );
 }
 

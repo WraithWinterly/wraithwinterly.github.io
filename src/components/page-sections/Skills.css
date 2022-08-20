@@ -20,9 +20,10 @@
   align-self: end;
   margin: 0px 24px;
   max-width: 700px;
+  row-gap: 24px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .Skills-icons-container {
     grid-template-columns: 170px 170px 170px;
   }

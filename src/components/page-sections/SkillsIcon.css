@@ -1,11 +1,18 @@
 .SkillsIcon {
+  color: var(--text-color);
+  text-decoration: none;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  padding: 18px 8px;
+  padding: 4px 8px;
   margin-left: 28px;
   margin-right: 28px;
+  transition: transform 0.2s;
+}
+
+.SkillsIcon:hover {
+  transform: scale(150%);
 }
 
 .SkillsIcon-img {
@@ -15,4 +22,6 @@
   background-position: center;
 }
 
-.SkillsIcon-name {}
+.SkillsIcon-name {
+  transition: margin-top 0.175s;
+}
