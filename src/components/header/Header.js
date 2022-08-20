@@ -3,6 +3,8 @@ import React, { useState, useRef } from 'react';
 import useWindowSize from '../../hooks/useWindowSize';
 import HeaderMenu from './HeaderMenu';
 
+import PFP from '../../assets/pfp256.png';
+
 import './Header.css';
 
 function Header() {
@@ -35,7 +37,7 @@ function Header() {
         <div className='Header-top'>
           <div className='Header-top-content'>
             <a href="/" className='Header-wraith-button'>
-              <img className='Header-pfp' src={`${process.env.PUBLIC_URL}/imgs/pfp256.png`} alt='Wraith Header'></img>
+              <img className='Header-pfp' src={PFP} alt='Wraith Header'></img>
               <h2 className='Header-wraith-text'>WraithWinterly</h2>
             </a>
             {size.width > 768 && (
