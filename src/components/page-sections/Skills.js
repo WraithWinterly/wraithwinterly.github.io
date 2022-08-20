@@ -43,7 +43,7 @@ function Skills() {
           })}
         </div>
       }
-      {!data && <LoadingIcon text={'Fetching Skills'} handleRefresh={() => setReqTimes(prev => prev + 1)} failed={failed} />}
+      {!data && <LoadingIcon text={'Fetching Skills'} handleRefresh={() => { setFailed(false); setReqTimes(prev => prev + 1); }} failed={failed} />}
     </div>
   );
 }
