@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.d7cc1c11.css",
+    "main.css": "/static/css/main.3c672599.css",
     "main.js": "/static/js/main.c41f4e04.js",
     "static/media/dust.png": "/static/media/dust.c5480a556af637533bb7.png",
     "static/media/planets.png": "/static/media/planets.d86790fe445e1248ed4b.png",
     "index.html": "/index.html",
-    "main.d7cc1c11.css.map": "/static/css/main.d7cc1c11.css.map",
+    "main.3c672599.css.map": "/static/css/main.3c672599.css.map",
     "main.c41f4e04.js.map": "/static/js/main.c41f4e04.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7cc1c11.css",
+    "static/css/main.3c672599.css",
     "static/js/main.c41f4e04.js"
   ]
 }
