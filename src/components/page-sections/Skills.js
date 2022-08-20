@@ -11,6 +11,7 @@ function Skills() {
 
   const [data, setData] = useState(null);
   const [failed, setFailed] = useState(false);
+  const [reqTimes, setReqTimes] = useState(0);
 
   async function getShowCaseItems() {
     try {
@@ -31,7 +32,7 @@ function Skills() {
       getShowCaseItems();
     }, 500);
     return () => { clearTimeout(timeout); };
-  }, []);
+  }, [reqTimes]);
 
   return (
     <div className='Skills-container'>
@@ -42,7 +43,7 @@ function Skills() {
           })}
         </div>
       }
-      {!data && <LoadingIcon text={'Fetching Skills'} handleRefresh={getShowCaseItems} failed={failed} />}
+      {!data && <LoadingIcon text={'Fetching Skills'} handleRefresh={() => setReqTimes(prev => prev + 1)} failed={failed} />}
     </div>
   );
 }
