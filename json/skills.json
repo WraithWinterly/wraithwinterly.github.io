@@ -1,0 +1,37 @@
+[
+  {
+    "name": "HTML5",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/html-icon.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
+  },
+  {
+    "name": "CSS",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/css-icon.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+  },
+  {
+    "name": "JavaScript",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/javascript-icon.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "name": "React",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/react-icon.png",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "name": "Godot",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/godot-icon.png",
+    "link": "https://godotengine.org/"
+  },
+  {
+    "name": "Unity",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/unity-icon.png",
+    "link": "https://unity.com/"
+  },
+  {
+    "name": "C#",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/csharp-icon.png",
+    "link": "https://docs.microsoft.com/en-us/dotnet/csharp/"
+  }
+]
