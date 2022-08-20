@@ -27,3 +27,9 @@
     grid-template-columns: 170px 170px 170px;
   }
 }
+
+@media (max-width: 550px) {
+  .Skills-icons-container {
+    grid-template-columns: 120px 120px 120px;
+  }
+}
