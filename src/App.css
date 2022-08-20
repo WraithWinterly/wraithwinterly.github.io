@@ -1,9 +1,7 @@
 .App-page-sections {
   background-color: var(--bg-color);
-  padding: 4px 4px;
   display: flex;
   flex-direction: column;
   position: relative;
-  gap: 30px;
   z-index: 1;
 }

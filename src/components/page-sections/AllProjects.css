@@ -1,13 +1,3 @@
-.AllProjects {
-  background-color: var(--bg-color);
-}
-
-.AllProjects-header {
-  background-color: var(--header-color);
-  text-align: center;
-  padding: 14px 0px;
-}
-
 .AllProjects-content {
   display: flex;
   justify-content: center;

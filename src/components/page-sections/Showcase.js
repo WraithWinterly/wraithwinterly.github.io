@@ -28,14 +28,11 @@ function Showcase() {
   const id = useId();
 
   return (
-    <div className='Showcase' id='showcase'>
-      <h1 className='Showcase-text accent-color'>Showcase</h1>
-      <div className='Showcase-card-container-wrapper'>
-        <div className='Showcase-card-container'>
-          {data && data.map((card, index) => {
-            return <ShowcaseCard key={`{${id}-${index}}`} name={card.name} desc={card.desc} stack={card.stack} link={card.link} img={card.img} />;
-          })}
-        </div>
+    <div className='Showcase-card-container-wrapper'>
+      <div className='Showcase-card-container'>
+        {data && data.map((card, index) => {
+          return <ShowcaseCard key={`{${id}-${index}}`} name={card.name} desc={card.desc} stack={card.stack} link={card.link} img={card.img} />;
+        })}
       </div>
     </div>
   );

@@ -3,6 +3,8 @@ import Header from './components/header/Header';
 import Home from './components/Home';
 import SpaceParallax from './components/parallax/SpaceParallax';
 
+import PageSection from './components/page-sections/PageSection';
+
 import Skills from './components/page-sections/Skills';
 import Everplast from './components/page-sections/Everplast';
 import Showcase from './components/page-sections/Showcase';
@@ -29,10 +31,10 @@ function App() {
       <SpaceParallax offsetY={offsetY} />
       <Home />
       <div className='App-page-sections'>
-        <Skills />
-        <Everplast />
-        <Showcase />
-        <AllProjects />
+        <PageSection headerText={'Skills'} contentJSX={<Skills />} id='skills' />
+        <PageSection headerText={'Everplast'} contentJSX={<Everplast />} noPadding={true} />
+        <PageSection headerText={'Showcase'} contentJSX={<Showcase />} id='showcase' />
+        <PageSection headerText={'All Projects'} contentJSX={<AllProjects />} id='all-projects' />
       </div>
     </div>
   );

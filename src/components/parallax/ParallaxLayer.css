@@ -3,7 +3,7 @@
   background-size: calc(100vh + 300px);
   background-repeat: repeat;
   width: 100%;
-  height: max(120vh, 2500px);
+  height: max(130vh, 800px);
   image-rendering: auto;
   image-rendering: -moz-crisp-edges;
   image-rendering: -webkit-crisp-edges;

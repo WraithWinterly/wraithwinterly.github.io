@@ -15,7 +15,6 @@ function ShowcaseCard({ name, desc, stack, link, img }) {
         </div>
       </div>
       <div>
-
       </div>
     </div>
   );

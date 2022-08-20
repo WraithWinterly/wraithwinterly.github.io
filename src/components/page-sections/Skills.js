@@ -9,9 +9,8 @@ function Everplast() {
     return `https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/${icon}-icon.png`;
   };
   return (
-    <div className='Skills'>
-      <h1 className='App-page-section-header-text'>Skills</h1>
-      <div className='Skills-container'>
+    <div className='Skills-container'>
+      <div className='Skills-icons-container'>
         <SkillsIcon name={'HTML5'} img={getIcon('html')} />
         <SkillsIcon name={'CSS3'} img={getIcon('css')} />
         <SkillsIcon name={'JavaScript'} img={getIcon('javascript')} />
