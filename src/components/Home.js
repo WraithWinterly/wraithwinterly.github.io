@@ -3,10 +3,16 @@ import React, { useEffect, useRef } from 'react';
 import './Home.css';
 
 function Home() {
-
   const homeRef = useRef(null);
 
-  useEffect(() => { homeRef.current.scrollIntoView(); }, []);
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      if (window.innerHeight <= 500) {
+        homeRef.current.scrollIntoView();
+      }
+    }, 25);
+    return () => { clearTimeout(timeout); };
+  }, []);
 
   return (
     <>
