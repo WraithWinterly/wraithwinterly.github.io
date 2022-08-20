@@ -12,12 +12,12 @@ function Everplast({ offsetY }) {
       backgroundPositionY: `${-offsetY / (size.width > 768 ? 2.75 : 3) + (size.width > 768 ? 275 : 225)}px`,
     }}>
       <div className='Everplast-button-container'>
-        <a className='button button-large button-github' href='https://github.com/WraithWinterly/Everplast' target='_blank'>View Source</a>
-        <a className='button button-large button-steam' href='https://store.steampowered.com/app/1896630/Everplast/' target='_blank'>Buy on Steam</a>
-        <a className='button button-large' href='' target='_blank'>Explore</a>
+        <a className='button button-large button-github' href='https://github.com/WraithWinterly/Everplast' target='_blank' rel="noreferrer">View Source</a>
+        <a className='button button-large button-steam' href='https://store.steampowered.com/app/1896630/Everplast/' target='_blank' rel="noreferrer">Buy on Steam</a>
+        <a className='button button-large' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">Explore</a>
       </div>
     </div>
   );
 }
 
-export default Everplast;;
+export default Everplast;

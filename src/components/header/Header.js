@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
 import HeaderMenu from './HeaderMenu';
@@ -18,8 +18,6 @@ function Header() {
     setIsOpen(prev => !prev);
   };
 
-
-
   function getHeaderLinks(fullMenu) {
     return (
       <>
@@ -37,7 +35,7 @@ function Header() {
         <div className='Header-top'>
           <div className='Header-top-content'>
             <a href="/" className='Header-wraith-button'>
-              <img className='Header-pfp' src={`${process.env.PUBLIC_URL}/imgs/pfp256.png`} alt='Profile Picture'></img>
+              <img className='Header-pfp' src={`${process.env.PUBLIC_URL}/imgs/pfp256.png`} alt='Wraith Header'></img>
               <h2 className='Header-wraith-text'>WraithWinterly</h2>
             </a>
             {size.width > 768 && (

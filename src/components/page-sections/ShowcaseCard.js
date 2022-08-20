@@ -8,9 +8,9 @@ function ShowcaseCard({ name, desc, stack, link, img }) {
       <h1 className='accent-color'>{name}</h1>
       <p className='text-color-light'>{desc}</p>
       <div className='ShowcaseCard-content'>
-        <a className='button button-large' target='_blank' href={link}>Visit Site</a>
+        <a className='button button-large' href={link} target='_blank' rel="noreferrer" >Visit Site</a>
         <div className='img-stack'>
-          <img className='ShowcaseCard-image' src={img} alt='Card Image'></img>
+          <img className='ShowcaseCard-image' src={img} alt='Showcase Card'></img>
           <p>{stack}</p>
         </div>
       </div>

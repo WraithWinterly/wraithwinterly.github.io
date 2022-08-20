@@ -23,11 +23,11 @@ function Home() {
             <p className='text-color-light'>Web developer previously in game development. A passionate, motivated programmer. Building accessible, stunning, and high quality products.</p>
           </div>
           <div className='Home-about-buttons-container'>
-            <a className='Home-about-button button button-github' href='https://github.com/WraithWinterly/wraithwinterly.github.io' target='_blank'>View Source</a>
-            <a className='Home-about-button button button-github' href='https://github.com/WraithWinterly' target='_blank'>View Github</a>
-            <a className='Home-about-button button button-twitterr' href='https://twitter.com/WraithWinterly' target='_blank'>View Twitter</a>
-            <a className='Home-about-button button button-linkedin' href='' target='_blank'>View LinkedIn</a>
-            <a className='Home-about-button button button-contact' href='' target='_blank'>Contact Me</a>
+            <a className='Home-about-button button button-github' href='https://github.com/WraithWinterly/wraithwinterly.github.io' target='_blank' rel="noreferrer">View Source</a>
+            <a className='Home-about-button button button-github' href='https://github.com/WraithWinterly' target='_blank' rel="noreferrer">View Github</a>
+            <a className='Home-about-button button button-twitterr' href='https://twitter.com/WraithWinterly' target='_blank' rel="noreferrer">View Twitter</a>
+            <a className='Home-about-button button button-linkedin' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">View LinkedIn</a>
+            <a className='Home-about-button button button-contact' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">Contact Me</a>
           </div>
         </div >
       </div>
