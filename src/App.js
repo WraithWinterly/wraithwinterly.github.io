@@ -32,7 +32,7 @@ function App() {
       <Home />
       <div className='App-page-sections'>
         <PageSection headerText={'Skills'} contentJSX={<Skills />} id='skills' />
-        <PageSection headerText={'Everplast'} contentJSX={<Everplast />} noPadding={true} />
+        <PageSection headerText={'Everplast'} contentJSX={<Everplast offsetY={offsetY} />} noPadding={true} />
         <PageSection headerText={'Showcase'} contentJSX={<Showcase />} id='showcase' />
         <PageSection headerText={'All Projects'} contentJSX={<AllProjects />} id='all-projects' />
       </div>

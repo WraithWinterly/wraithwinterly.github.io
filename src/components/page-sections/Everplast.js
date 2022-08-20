@@ -1,10 +1,16 @@
 import React from 'react';
+import useWindowSize from '../../hooks/useWindowSize';
 
 import './Everplast.css';
 
-function Everplast() {
+function Everplast({ offsetY }) {
+  const size = useWindowSize();
+
   return (
-    <div className='Everplast-img'>
+    <div className='Everplast-img' style={{
+      backgroundSize: size.width > 1750 ? 'cover' : '1750px',
+      backgroundPositionY: `${-offsetY / (size.width > 768 ? 2.75 : 3) + (size.width > 768 ? 275 : 225)}px`,
+    }}>
       <div className='Everplast-button-container'>
         <a className='button button-large button-github' href='https://github.com/WraithWinterly/Everplast' target='_blank'>View Source</a>
         <a className='button button-large button-steam' href='https://store.steampowered.com/app/1896630/Everplast/' target='_blank'>Buy on Steam</a>
@@ -14,4 +20,4 @@ function Everplast() {
   );
 }
 
-export default Everplast;
+export default Everplast;;
