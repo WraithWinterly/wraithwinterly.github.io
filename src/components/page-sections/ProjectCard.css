@@ -1,0 +1,64 @@
+.ProjectCard {
+  background-color: var(--header-color);
+  color: var(--accent-color2);
+  background-position: center;
+  background-size: cover;
+  width: 375px;
+  height: 375px;
+  border-radius: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProjectCard-text {
+  font-weight: bold;
+  background-color: rgba(1, 1, 1, 0.6);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding-top: 8px;
+  padding-bottom: 2px;
+  margin: 0;
+}
+
+.ProjectCard-text h1 {
+  margin: 0;
+}
+
+.ProjectCard-text p {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.ProjectCard-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.ProjectCard-stack-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 22px;
+}
+
+.ProjectCard-stack-item {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .ProjectCard {
+    max-width: 300px;
+  }
+
+  .ProjectCard-content {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+}

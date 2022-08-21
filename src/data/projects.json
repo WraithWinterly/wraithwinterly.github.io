@@ -1,0 +1,37 @@
+[
+  {
+    "name": "This site",
+    "desc": "WraithWinterly's Portfolio",
+    "link": "https://wraithwinterly.github.io",
+    "linksrc": "https://github.com/WraithWinterly/wraithwinterly.github.io",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/pfp256.png",
+    "stack": [
+      "html",
+      "css",
+      "javascript",
+      "react"
+    ]
+  },
+  {
+    "name": "Tasks Ultra",
+    "desc": "Task Management app with Javascript",
+    "link": "https://tasksultra.netlify.app",
+    "linksrc": "https://github.com/WraithWinterly/TasksUltra",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/tasksultra.png",
+    "stack": [
+      "html",
+      "css",
+      "javascript"
+    ]
+  },
+  {
+    "name": "Everplast",
+    "desc": "A unique platforming experience by WraithWinterly",
+    "link": "https://store.steampowered.com/app/1896630/Everplast",
+    "linksrc": "https://github.com/WraithWinterly/Everplast",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/everplast-capsule.png",
+    "stack": [
+      "godot"
+    ]
+  }
+]

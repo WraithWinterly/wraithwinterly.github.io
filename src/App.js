@@ -6,9 +6,8 @@ import SpaceParallax from './components/parallax/SpaceParallax';
 import PageSection from './components/page-sections/PageSection';
 
 import Skills from './components/page-sections/Skills';
-import Everplast from './components/page-sections/Everplast';
 import Showcase from './components/page-sections/Showcase';
-import AllProjects from './components/page-sections/AllProjects';
+import Projects from './components/page-sections/Projects';
 import Contact from './components/page-sections/Contact';
 
 import { useEffect, useState } from 'react';
@@ -33,9 +32,8 @@ function App() {
       <Home />
       <div className='App-page-sections'>
         <PageSection headerText={'Skills'} contentJSX={<Skills />} id='skills' />
-        <PageSection headerText={'Everplast'} contentJSX={<Everplast offsetY={offsetY} />} noPadding={true} />
-        <PageSection headerText={'Showcase'} contentJSX={<Showcase />} id='showcase' />
-        <PageSection headerText={'All Projects'} contentJSX={<AllProjects />} id='all-projects' />
+        <PageSection headerText={'Showcase'} contentJSX={<Showcase offsetY={offsetY} />} noPadding={true} id='showcase' />
+        <PageSection headerText={'All Projects'} contentJSX={<Projects />} id='all-projects' />
         <PageSection headerText={'Contact'} contentJSX={<Contact />} id='contact' />
       </div>
     </div>

@@ -1,52 +1,21 @@
-import React, { useState, useEffect, useId } from 'react';
-import ShowcaseCard from './ShowcaseCard';
-
-import ShowCaseJSON from '../../data/showcaseProjects.json';
-
-import LoadingIcon from '../LoadingIcon';
+import React from 'react';
+import useWindowSize from '../../hooks/useWindowSize';
 
 import './Showcase.css';
 
-function Showcase() {
-  const [data, setData] = useState(null);
-  const [failed, setFailed] = useState(false);
-  const [reqTimes, setReqTimes] = useState(0);
-
-  async function getShowCaseItems() {
-    try {
-      const response = await fetch('https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/json/showcaseprojects.json');
-      const data = await response.json();
-      setData(data);
-      setFailed(false);
-      // Use testing data
-      //setData(JSON.parse(JSON.stringify(ShowCaseJSON)));
-    }
-    catch {
-      console.error('Error fetching showcase items');
-      setData(null);
-      setFailed(true);
-    }
-  }
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      getShowCaseItems();
-    }, 500);
-    return () => { clearTimeout(timeout); };
-  }, [reqTimes]);
-
-  const id = useId();
+function Showcase({ offsetY }) {
+  const size = useWindowSize();
 
   return (
-    <div className='Showcase-card-container-wrapper'>
-      {data &&
-        <div className='Showcase-card-container'>
-          {data && data.map((card, index) => {
-            return <ShowcaseCard key={`{${id}-${index}}`} name={card.name} desc={card.desc} stack={card.stack} link={card.link} img={card.img} />;
-          })}
-        </div>
-      }
-      {!data && <LoadingIcon text={'Fetching Showcase Items'} handleRefresh={() => { setFailed(false); setReqTimes(prev => prev + 1); }} failed={failed} />}
+    <div className='Showcase-img' style={{
+      backgroundSize: size.width > 1750 ? 'cover' : '1750px',
+      backgroundPositionY: `${-offsetY / (size.width > 768 ? 2.75 : 3) + (size.width > 768 ? 225 : 225)}px`,
+    }}>
+      <div className='Showcase-button-container'>
+        <a className='button button-large button-github' href='https://github.com/WraithWinterly/Showcase' target='_blank' rel="noreferrer">View Source</a>
+        <a className='button button-large button-steam' href='https://store.steampowered.com/app/1896630/Showcase/' target='_blank' rel="noreferrer">Buy on Steam</a>
+        <a className='button button-large' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">Explore</a>
+      </div>
     </div>
   );
 }
