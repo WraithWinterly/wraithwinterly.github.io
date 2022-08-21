@@ -2,8 +2,9 @@
   background-color: var(--accent-color2);
   color: white;
   border-radius: 15px;
-  padding: 10px 18px;
-  padding-bottom: 12px;
+  padding: 12px 18px;
+  padding-bottom: 14px;
+  height: 100%;
   margin: 8px 10px;
   text-decoration: none;
   text-align: center;
@@ -19,7 +20,7 @@
 
 .button-large {
   padding: 12px 36px;
-  padding-bottom: 18px;
+  padding-bottom: 14px;
   font-size: 1.2rem;
 }
 
