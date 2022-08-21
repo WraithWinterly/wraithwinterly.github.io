@@ -9,6 +9,7 @@ import Skills from './components/page-sections/Skills';
 import Everplast from './components/page-sections/Everplast';
 import Showcase from './components/page-sections/Showcase';
 import AllProjects from './components/page-sections/AllProjects';
+import Contact from './components/page-sections/Contact';
 
 import { useEffect, useState } from 'react';
 
@@ -35,6 +36,7 @@ function App() {
         <PageSection headerText={'Everplast'} contentJSX={<Everplast offsetY={offsetY} />} noPadding={true} />
         <PageSection headerText={'Showcase'} contentJSX={<Showcase />} id='showcase' />
         <PageSection headerText={'All Projects'} contentJSX={<AllProjects />} id='all-projects' />
+        <PageSection headerText={'Contact'} contentJSX={<Contact />} id='contact' />
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ function Home() {
             <a className='Home-about-button button button-github' href='https://github.com/WraithWinterly' target='_blank' rel="noreferrer">View Github</a>
             <a className='Home-about-button button button-twitterr' href='https://twitter.com/WraithWinterly' target='_blank' rel="noreferrer">View Twitter</a>
             <a className='Home-about-button button button-linkedin' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">View LinkedIn</a>
-            <a className='Home-about-button button button-contact' href='https://wraithwinterly.github.io' target='_blank' rel="noreferrer">Contact Me</a>
+            <a className='Home-about-button button button-contact' href='#contact'>Contact Me</a>
           </div>
         </div >
       </div>

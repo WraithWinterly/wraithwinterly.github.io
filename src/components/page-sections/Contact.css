@@ -1,0 +1,97 @@
+.Contact-form-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.4s;
+}
+
+.Contact-form-container-submit {
+  transform: scale(0%);
+}
+
+.Contact-form {
+  background-color: var(--header-color);
+  border-radius: 24px;
+  width: 74vw;
+  max-width: 950px;
+  height: fit-content;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 35px;
+}
+
+.Contact-form-boxes {
+  display: flex;
+  justify-content: stretch;
+  width: 100%;
+  height: 100%;
+  gap: 35px;
+}
+
+.Contact-form input,
+.Contact-form textarea {
+  background-color: var(--bg-color);
+  color: var(--accent-color);
+  border: var(--accent-color2) solid 1.8px;
+  border-radius: 14px;
+  padding: 12px 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.Contact-form input:focus,
+.Contact-form textarea:focus {
+  border: var(--accent-color) solid 1.8px;
+  outline: none;
+}
+
+.Contact-form textarea {
+  min-height: 270px;
+  resize: none;
+  font-size: 1.2rem;
+}
+
+.Contact-form button {
+  align-self: center;
+  width: 80%;
+  max-width: 320px;
+}
+
+.Contact-form label {
+  color: var(--text-color-light);
+  padding: 10px 0px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Contact-container-left {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-container-right {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.Contact-form-submit-loading-icon {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .Contact-form-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
