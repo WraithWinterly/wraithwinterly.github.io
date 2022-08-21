@@ -2,21 +2,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
   transition: transform 0.2s;
 }
 
-.LoadingIcon:hover {
+.LoadingIcon-with-hover {
+  cursor: pointer;
+}
+
+.LoadingIcon-with-hover:hover {
   transform: scale(110%);
 }
 
-.LoadingIcon:active {
+.LoadingIcon-with-hover:active {
   transform: scale(150%);
 }
 
-
 .LoadingIcon-text {
+  max-width: 300px;
   text-align: center;
+  font-family: inherit;
+  font-size: larger;
+  font-weight: bold;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
 .LoadingIcon-text-failed {
