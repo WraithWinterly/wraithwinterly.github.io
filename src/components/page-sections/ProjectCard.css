@@ -14,12 +14,13 @@
 
 .ProjectCard-text {
   font-weight: bold;
-  background-color: rgba(1, 1, 1, 0.6);
+  background-color: rgba(1, 1, 1, 0.7);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding-top: 8px;
   padding-bottom: 2px;
   margin: 0;
+  height: 125px;
 }
 
 .ProjectCard-text h1 {
@@ -54,11 +55,11 @@
 
 @media (max-width: 768px) {
   .ProjectCard {
-    max-width: 300px;
+    max-width: 370px;
   }
 
   .ProjectCard-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 15px;
   }
 }

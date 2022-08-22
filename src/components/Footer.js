@@ -9,16 +9,21 @@ function Footer() {
     <div className='Footer'>
       <div className='Footer-container'>
         <div className='Footer-container-column'>
-          <p>Ayden's Official Website</p>
-          <p>This is my second created website designed for viewing all of my projects and contacting me for required information. If you would like to email me, please use the contact form and I will reply to your email.</p>
+          <div className='Footer-container-top-item'>
+            <p className='accent-color'>Ayden's Official Website</p>
+            <hr></hr>
+          </div>
+          <p style={{ width: '86%' }}>This is my second website created, designed for viewing all of my projects and contacting me. If you would like to send an email, please use the contact form and I will reply to your email.</p>
         </div>
-        <div className='Footer-container-column'>
-          <p>&copy; WraithWinterly {createYear === currentYear ? createYear : `${createYear}-${currentYear}`}</p>
+        <div className='Footer-container-column Footer-container-column-center' id='footer-mid'>
+          <p className='Footer-copyright'>&copy; WraithWinterly {createYear === currentYear ? createYear : `${createYear}-${currentYear}`}</p>
           <a href="https://github.com/WraithWinterly/wraithwinterly.github.io" target="_blank" rel="noreferrer">View Source</a>
         </div>
         <div className='Footer-container-column'>
-          <p className='accent-color'>Links</p>
-          <hr style={{ color: 'white', width: '94%' }}></hr>
+          <div className='Footer-container-top-item'>
+            <p className='accent-color'>Links</p>
+            <hr></hr>
+          </div>
           <div className='Footer-container-row'>
             <div className='Footer-container-column'>
               <a href="https://wraithwinterly.github.io" target="_blank" rel="noreferrer">LinkedIn</a>
@@ -30,8 +35,6 @@ function Footer() {
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );
