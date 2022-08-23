@@ -6,8 +6,6 @@
     "linksrc": "https://github.com/WraithWinterly/wraithwinterly.github.io",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/pfp256.png",
     "stack": [
-      "html",
-      "css",
       "javascript",
       "react"
     ]
@@ -19,8 +17,6 @@
     "linksrc": "https://github.com/WraithWinterly/TasksUltra",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/tasksultra.png",
     "stack": [
-      "html",
-      "css",
       "javascript"
     ]
   },
