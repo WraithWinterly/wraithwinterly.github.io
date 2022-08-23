@@ -1,15 +1,5 @@
 [
   {
-    "name": "HTML5",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/html-icon.png",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"
-  },
-  {
-    "name": "CSS",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/css-icon.png",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
-  },
-  {
     "name": "JavaScript",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/javascript-icon.png",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
