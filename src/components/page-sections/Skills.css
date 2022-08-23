@@ -14,16 +14,16 @@
 
 .Skills-icons-container {
   display: grid;
-  grid-template-columns: 170px 170px 170px 170px;
+  grid-template-columns: 170px 170px 170px 170px 170px;
   flex-wrap: wrap;
   justify-content: end;
   align-self: end;
   margin: 0px 24px;
-  max-width: 700px;
+  max-width: 1200px;
   row-gap: 24px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .Skills-icons-container {
     grid-template-columns: 170px 170px 170px;
   }

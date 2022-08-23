@@ -5,11 +5,12 @@ import './ProjectCard.css';
 function ProjectCard({ name, desc, stack, link, linksrc, img }) {
   const id = useId();
   return (
-    <div className='ProjectCard' style={{ backgroundImage: `url(${img})` }}>
+    <div className='ProjectCard'>
       <div className='ProjectCard-text'>
         <h1 className='accent-color'>{name}</h1>
         <p className='text-color-light'>{desc}</p>
       </div>
+      <img className='ProjectCard-image' src={img} alt={name} />
       <div className='ProjectCard-content'>
         <a className='button button-large' href={link} target='_blank' rel="noreferrer" >View</a>
         <a className='button button-large button-github' href={linksrc} target='_blank' rel="noreferrer" >View Source</a>

@@ -4,17 +4,21 @@
   background-position: center;
   background-size: cover;
   width: 375px;
-  height: 375px;
+  height: 750px;
   border-radius: 15px;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.ProjectCard-image {
+  border-radius: 0px;
 }
 
 .ProjectCard-text {
   font-weight: bold;
-  background-color: rgba(1, 1, 1, 0.7);
+  background-color: rgba(1, 1, 1, 0);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   padding-top: 8px;
@@ -37,7 +41,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
+  margin-top: 20px;
 }
 
 .ProjectCard-stack-container {
@@ -45,6 +50,7 @@
   justify-content: center;
   align-items: center;
   gap: 18px;
+  padding-top: 16px;
   padding-bottom: 22px;
 }
 
