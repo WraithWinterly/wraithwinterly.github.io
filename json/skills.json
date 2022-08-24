@@ -10,6 +10,11 @@
     "link": "https://reactjs.org/"
   },
   {
+    "name": "Bootstrap",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/bootstrap-icon.png",
+    "link": "https://getbootstrap.com/"
+  },
+  {
     "name": "Godot",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/godot-icon.png",
     "link": "https://godotengine.org/"

@@ -21,6 +21,19 @@
     ]
   },
   {
+    "name": "React Bootstrap Todo",
+    "desc": "Basic template todo app using Vite",
+    "link": "https://wraithwinterly.github.io/react-bootstrap-todo/",
+    "linksrc": "https://github.com/WraithWinterly/react-bootstrap-todo",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/react-bootstrap-todo.png",
+    "stack": [
+      "javascript",
+      "react",
+      "vite",
+      "bootstrap"
+    ]
+  },
+  {
     "name": "Everplast",
     "desc": "A unique platforming experience by WraithWinterly",
     "link": "https://store.steampowered.com/app/1896630/Everplast",
