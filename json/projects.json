@@ -42,5 +42,16 @@
     "stack": [
       "godot"
     ]
+  },
+  {
+    "name": "Block Hit",
+    "desc": "Casual Action game with Godot and C#",
+    "link": "https://wraithwinterly.itch.io/blockhit",
+    "linksrc": "https://github.com/WraithWinterly/BlockHit",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/blockhit.png",
+    "stack": [
+      "godot",
+      "csharp"
+    ]
   }
 ]
