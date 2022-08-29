@@ -53,5 +53,16 @@
       "godot",
       "csharp"
     ]
+  },
+  {
+    "name": "Wraith FPS",
+    "desc": "An open-source documented Unity FPS-RTS Sample",
+    "link": "https://www.youtube.com/watch?v=fMNmn9NV5DE",
+    "linksrc": "https://github.com/WraithWinterly/Unity-FPS-RTS-System",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/wraithfps.png",
+    "stack": [
+      "unity",
+      "csharp"
+    ]
   }
 ]
