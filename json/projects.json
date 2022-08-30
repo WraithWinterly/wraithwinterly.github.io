@@ -1,16 +1,5 @@
 [
   {
-    "name": "This site",
-    "desc": "WraithWinterly's Portfolio",
-    "link": "https://wraithwinterly.github.io",
-    "linksrc": "https://github.com/WraithWinterly/wraithwinterly.github.io",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/pfp256.png",
-    "stack": [
-      "javascript",
-      "react"
-    ]
-  },
-  {
     "name": "Tasks Ultra",
     "desc": "Task Management app with Javascript",
     "link": "https://tasksultra.netlify.app",
