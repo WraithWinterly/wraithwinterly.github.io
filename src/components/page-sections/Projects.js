@@ -38,9 +38,9 @@ function Projects() {
   const id = useId();
 
   return (
-    <div className='Showcase-card-container-wrapper'>
+    <div className='Projects-card-container-wrapper'>
       {data &&
-        <div className='Showcase-card-container'>
+        <div className='Projects-card-container'>
           {data && data.map((card, index) => {
             return <ProjectCard key={`{${id}-${index}}`} name={card.name} desc={card.desc} stack={card.stack} link={card.link} linksrc={card.linksrc} img={card.img} />;
           })}
