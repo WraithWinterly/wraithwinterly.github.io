@@ -59,6 +59,12 @@
   height: 100%;
   width: 80%;
   max-width: 320px;
+  outline: 1px solid transparent;
+  border: none;
+}
+
+.Contact-form button:focus {
+  outline: 1px solid var(--accent-color);
 }
 
 .Contact-form label {
