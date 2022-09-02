@@ -15,6 +15,11 @@
     "link": "https://getbootstrap.com/"
   },
   {
+    "name": "Tailwind",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/tailwind-icon.png",
+    "link": "https://tailwindcss.com/"
+  },
+  {
     "name": "Godot",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/godot-icon.png",
     "link": "https://godotengine.org/"
