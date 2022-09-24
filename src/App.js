@@ -24,7 +24,7 @@ function App() {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
-    return () => (window.removeEventListener('scroll', handleScroll));
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -35,7 +35,8 @@ function App() {
       <div className='App-page-sections'>
         <PageSection headerText={'Skills'} contentJSX={<Skills />} id='skills' />
         <PageSection headerText={'Showcasing Everplast'} contentJSX={<Showcase offsetY={offsetY} />} noPadding={true} id='showcase' />
-        <PageSection headerText={'All Projects'} contentJSX={<Projects />} id='all-projects' />
+        {/* <PageSection headerText={'All Projects'} contentJSX={<Projects />} id='all-projects' /> */}
+        <Projects />
         <PageSection headerText={'Contact'} contentJSX={<Contact />} id='contact' />
       </div>
       <Footer />
