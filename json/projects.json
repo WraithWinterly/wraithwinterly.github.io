@@ -5,9 +5,8 @@
     "link": "https://tasksultra.netlify.app",
     "linksrc": "https://github.com/WraithWinterly/TasksUltra",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/tasksultra.png",
-    "stack": [
-      "javascript"
-    ]
+    "stack": ["javascript"],
+    "type": "webapp"
   },
   {
     "name": "React Bootstrap Todo",
@@ -15,22 +14,26 @@
     "link": "https://wraithwinterly.github.io/react-bootstrap-todo/",
     "linksrc": "https://github.com/WraithWinterly/react-bootstrap-todo",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/react-bootstrap-todo.png",
-    "stack": [
-      "javascript",
-      "react",
-      "vite",
-      "bootstrap"
-    ]
+    "stack": ["javascript", "react", "vite", "bootstrap"],
+    "type": "webapp"
   },
   {
-    "name": "Everplast",
-    "desc": "A unique platforming experience by WraithWinterly",
-    "link": "https://store.steampowered.com/app/1896630/Everplast",
-    "linksrc": "https://github.com/WraithWinterly/Everplast",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/everplast-capsule.png",
-    "stack": [
-      "godot"
-    ]
+    "name": "React Bootstrap Todo",
+    "desc": "Basic template todo app using Vite",
+    "link": "https://wraithwinterly.github.io/react-bootstrap-todo/",
+    "linksrc": "https://github.com/WraithWinterly/react-bootstrap-todo",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/react-bootstrap-todo.png",
+    "stack": ["javascript", "react", "vite", "bootstrap"],
+    "type": "webapp"
+  },
+  {
+    "name": "Rapid Wraith",
+    "desc": "Coffee Shop Template Website",
+    "link": "https://wraithwinterly.github.io/rapid-wraith",
+    "linksrc": "https://github.com/WraithWinterly/rapid-wraith",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/rapid-wraith.png",
+    "stack": ["javascript, tailwind, vite"],
+    "type": "webpage"
   },
   {
     "name": "Block Hit",
@@ -38,10 +41,8 @@
     "link": "https://wraithwinterly.itch.io/blockhit",
     "linksrc": "https://github.com/WraithWinterly/BlockHit",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/blockhit.png",
-    "stack": [
-      "godot",
-      "csharp"
-    ]
+    "stack": ["godot", "csharp"],
+    "type": "game"
   },
   {
     "name": "Wraith FPS",
@@ -49,9 +50,7 @@
     "link": "https://www.youtube.com/watch?v=fMNmn9NV5DE",
     "linksrc": "https://github.com/WraithWinterly/Unity-FPS-RTS-System",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/wraithfps.png",
-    "stack": [
-      "unity",
-      "csharp"
-    ]
+    "stack": ["unity", "csharp"],
+    "type": "game"
   }
 ]
