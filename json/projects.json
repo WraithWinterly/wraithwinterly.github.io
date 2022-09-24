@@ -32,7 +32,7 @@
     "link": "https://wraithwinterly.github.io/rapid-wraith",
     "linksrc": "https://github.com/WraithWinterly/rapid-wraith",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/rapid-wraith.png",
-    "stack": ["javascript, tailwind, vite"],
+    "stack": ["javascript", "tailwind", "vite"],
     "type": "webpage"
   },
   {
