@@ -67,7 +67,11 @@ function Projects() {
     <>
       {data && (
         <>
-          <PageSection headerText={'Web Applications'} contentJSX={createCardJSX(data.filter((val) => val.type === 'webapp'))} />
+          <PageSection
+            headerText={'Web Applications'}
+            contentJSX={createCardJSX(data.filter((val) => val.type === 'webapp'))}
+            id='all-projects'
+          />
           <PageSection headerText={'Web Pages'} contentJSX={createCardJSX(data.filter((val) => val.type === 'webpage'))} />
           <PageSection headerText={'Games'} contentJSX={createCardJSX(data.filter((val) => val.type === 'game'))} />
         </>
