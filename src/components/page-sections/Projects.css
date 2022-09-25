@@ -12,3 +12,9 @@
   align-items: stretch;
   height: 100%;
 }
+
+@media (min-width: 950px) {
+  .Projects-card-container {
+    flex-direction: column;
+  }
+}
