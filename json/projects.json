@@ -1,7 +1,16 @@
 [
   {
+    "name": "Calculator",
+    "desc": "Supporting advanced and simple arithmetic operations, this calculator is a must-have for every student.",
+    "link": "https://wraithwinterly.github.io/calculator",
+    "linksrc": "https://github.com/WraithWinterly/calculator",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/calculator.png",
+    "stack": ["javascript", "vite", "tailwind"],
+    "type": "webapp"
+  },
+  {
     "name": "Tasks Ultra",
-    "desc": "Task Management app with Javascript",
+    "desc": "The ultimate task management app, plan your day with this app and never miss a deadline.",
     "link": "https://tasksultra.netlify.app",
     "linksrc": "https://github.com/WraithWinterly/TasksUltra",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/tasksultra.png",
@@ -10,25 +19,25 @@
   },
   {
     "name": "React Bootstrap Todo",
-    "desc": "Basic template todo app using Vite",
+    "desc": "(This project will be changed soon) Basic template todo app using Vite",
     "link": "https://wraithwinterly.github.io/react-bootstrap-todo/",
     "linksrc": "https://github.com/WraithWinterly/react-bootstrap-todo",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/react-bootstrap-todo.png",
-    "stack": ["javascript", "react", "vite", "bootstrap"],
+    "stack": ["javascript", "vite", "react", "bootstrap"],
     "type": "webapp"
   },
   {
     "name": "Rapid Wraith",
-    "desc": "Coffee Shop Template Website",
+    "desc": "In this coffee shop, you can find your favorite coffee, you truly deserve it.",
     "link": "https://wraithwinterly.github.io/rapid-wraith",
     "linksrc": "https://github.com/WraithWinterly/rapid-wraith",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/rapid-wraith.png",
-    "stack": ["javascript", "tailwind", "vite"],
+    "stack": ["javascript", "vite", "tailwind"],
     "type": "webpage"
   },
   {
     "name": "Everplast",
-    "desc": "A unique platforming experience by WraithWinterly",
+    "desc": "With fun, adrenaline and a lot of failing, this is not just a game, this is Everplast.",
     "link": "https://store.steampowered.com/app/1896630/Everplast",
     "linksrc": "https://github.com/WraithWinterly/Everplast",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/everplast-capsule.png",
@@ -37,7 +46,7 @@
   },
   {
     "name": "Block Hit",
-    "desc": "Casual Action game with Godot and C#",
+    "desc": "An action game - hit the blocks to get points, but be careful, the obstacles are coming.",
     "link": "https://wraithwinterly.itch.io/blockhit",
     "linksrc": "https://github.com/WraithWinterly/BlockHit",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/blockhit.png",
@@ -46,7 +55,7 @@
   },
   {
     "name": "Wraith FPS",
-    "desc": "An open-source documented Unity FPS-RTS Sample",
+    "desc": "An open-source documented Unity FPS/RTS sample with a lot of features and a lot of fun.",
     "link": "https://www.youtube.com/watch?v=fMNmn9NV5DE",
     "linksrc": "https://github.com/WraithWinterly/Unity-FPS-RTS-System",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/wraithfps.png",
