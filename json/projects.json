@@ -1,8 +1,17 @@
 [
   {
+    "name": "Unit Converter",
+    "desc": "Converts units of measurement, such as length, mass, and temperature, and data speed.",
+    "link": "https://wraithwinterly.github.io/unit-converter/",
+    "linksrc": "https://github.com/WraithWinterly/unit-converter",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/unit-converter.png",
+    "stack": ["javascript", "vite", "react", "tailwind"],
+    "type": "webapp"
+  },
+  {
     "name": "Calculator",
     "desc": "Supporting advanced and simple arithmetic operations, this calculator is a must-have for every student.",
-    "link": "https://wraithwinterly.github.io/calculator",
+    "link": "https://wraithwinterly.github.io/calculator/",
     "linksrc": "https://github.com/WraithWinterly/calculator",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/calculator.png",
     "stack": ["javascript", "vite", "tailwind"],
@@ -29,7 +38,7 @@
   {
     "name": "Rapid Wraith",
     "desc": "In this coffee shop, you can find your favorite coffee, you truly deserve it.",
-    "link": "https://wraithwinterly.github.io/rapid-wraith",
+    "link": "https://wraithwinterly.github.io/rapid-wraith/",
     "linksrc": "https://github.com/WraithWinterly/rapid-wraith",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/project-photos/rapid-wraith.png",
     "stack": ["javascript", "vite", "tailwind"],
