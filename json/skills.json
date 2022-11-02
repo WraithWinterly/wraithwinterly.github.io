@@ -1,8 +1,18 @@
 [
   {
-    "name": "JavaScript",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/javascript-icon.png",
-    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    "name": "Next.js",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/nextjs-icon.png",
+    "link": "https://nextjs.org/"
+  },
+  {
+    "name": "Prisma",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/prisma-icon.png",
+    "link": "https://prisma.io/"
+  },
+  {
+    "name": "GraphQL",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/graphql-icon.png",
+    "link": "https://graphql.org/"
   },
   {
     "name": "React",
@@ -10,14 +20,19 @@
     "link": "https://reactjs.org/"
   },
   {
-    "name": "Bootstrap",
-    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/bootstrap-icon.png",
-    "link": "https://getbootstrap.com/"
+    "name": "JavaScript",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/javascript-icon.png",
+    "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/"
   },
   {
     "name": "Tailwind",
     "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/tailwind-icon.png",
     "link": "https://tailwindcss.com/"
+  },
+  {
+    "name": "Bootstrap",
+    "img": "https://raw.githubusercontent.com/WraithWinterly/wraithwinterly.github.io/fetch/icons/bootstrap-icon.png",
+    "link": "https://getbootstrap.com/"
   },
   {
     "name": "Godot",
